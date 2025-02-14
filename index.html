@@ -6,264 +6,111 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Language Centre Front Page</title>
   <style>
-    /* General Layout */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-    }
-
-    /* Side Menu Styles */
-    .side-menu {
-      width: 250px;
-      background-color: #f4f4f4;
-      padding: 20px;
-      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-      height: 100vh;
-      overflow-y: auto;
-    }
-
-    .menu-item {
-      font-size: 1.2em;
-      font-weight: bold;
-      color: #333;
-      margin-bottom: 10px;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .menu-item:hover {
-      color: #007BFF;
-    }
-
-    .submenu {
-      margin-left: 20px;
-      list-style-type: none;
-      padding: 0;
-    }
-
-    .submenu-item {
-      font-size: 1em;
-      color: #555;
-      margin-bottom: 8px;
-    }
-
-    .submenu-item a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .submenu-item a:hover {
-      color: #007BFF;
-    }
-
-    /* Content Section */
-    .content {
-      flex-grow: 1;
-      padding: 20px;
-    }
-
-    /* Carousel */
-    .carousel {
-      width: 100%;
-      max-width: 1200px;
-      margin: 20px auto;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .carousel-track {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-    }
-
-    .carousel-item {
-      min-width: 100%;
-      box-sizing: border-box;
-    }
-
-    .carousel-item img {
-      width: 100%;
-      height: auto;
-      max-height: 600px;
-    }
-
-    .carousel-buttons {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .carousel-button {
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-    }
-
-    /* Boxes */
-    .section-boxes {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      margin: 30px auto;
-      max-width: 1200px;
-    }
-
-    .box {
-      width: 200px;
-      height: 200px;
-      background-color: #f2f2f2;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 2px solid #ccc;
-      border-radius: 10px;
-      margin: 10px;
-      text-align: center;
-      font-weight: bold;
-      cursor: pointer;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .box:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    /* Box Content */
-    .box-content {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    .box-content p {
-      font-size: 1.2em;
-      margin: 10px 0;
-    }
-
-    .box-content a {
-      font-size: 1em;
-      color: #007BFF;
-      text-decoration: none;
-    }
-
-    .box-content a:hover {
-      text-decoration: underline;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; display: flex; }
+    .side-menu { width: 250px; background-color: #f4f4f4; padding: 20px; box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); height: 100vh; overflow-y: auto; }
+    .menu-item { font-size: 1.2em; font-weight: bold; color: #333; margin-bottom: 10px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+    .menu-item:hover { color: #007BFF; }
+    .submenu { margin-left: 20px; list-style-type: none; padding: 0; }
+    .submenu-item { font-size: 1em; color: #555; margin-bottom: 8px; }
+    .submenu-item a { text-decoration: none; color: inherit; }
+    .submenu-item a:hover { color: #007BFF; }
+    .content { flex-grow: 1; padding: 20px; }
+    .carousel { width: 100%; max-width: 1200px; margin: 20px auto; overflow: hidden; position: relative; }
+    .carousel-track { display: flex; transition: transform 0.5s ease-in-out; }
+    .carousel-item { min-width: 100%; box-sizing: border-box; }
+    .carousel-item img { width: 100%; height: auto; max-height: 600px; }
+    .carousel-buttons { position: absolute; top: 50%; transform: translateY(-50%); width: 100%; display: flex; justify-content: space-between; }
+    .carousel-button { background-color: rgba(0, 0, 0, 0.5); color: white; border: none; padding: 10px 20px; cursor: pointer; }
+    .section-boxes { display: flex; justify-content: space-around; flex-wrap: wrap; margin: 30px auto; max-width: 1200px; }
+    .box { width: 200px; height: 200px; background-color: #f2f2f2; display: flex; align-items: center; justify-content: center; border: 2px solid #ccc; border-radius: 10px; margin: 10px; text-align: center; font-weight: bold; cursor: pointer; transition: transform 0.3s, box-shadow 0.3s; }
+    .box:hover { transform: scale(1.05); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+    .box-content { text-align: center; margin-top: 20px; }
+    .box-content p { font-size: 1.2em; margin: 10px 0; }
+    .box-content a { font-size: 1em; color: #007BFF; text-decoration: none; }
+    .box-content a:hover { text-decoration: underline; }
   </style>
 </head>
 
 <body>
-  <!-- Side Menu -->
   <div class="side-menu">
-    <!-- Module 1: About Us -->
-    <div class="menu-item" data-menu="about">
-      About Us
-      <span>+</span>
-    </div>
+    <div class="menu-item" data-menu="about">About Us <span>+</span></div>
     <ul class="submenu" id="about">
       <li class="submenu-item"><a href="About_Us/Mission/Mission_template.html">Mission</a></li>
       <li class="submenu-item"><a href="About_Us/Staff/Staff_template.html">Staff</a></li>
+      <li class="submenu-item"><a href="About_Us/Job_Vacancies/Job_Vacancies_template.html">Job Vacancies</a></li>
+      <li class="submenu-item"><a href="About_Us/Contact_Us/Contact_Us_template.html">Contact Us</a></li>
     </ul>
-
-    <!-- Module 2: Courses -->
-    <div class="menu-item" data-menu="courses">
-      Courses
-      <span>+</span>
-    </div>
+    <div class="menu-item" data-menu="courses">Courses <span>+</span></div>
     <ul class="submenu" id="courses">
       <li class="submenu-item"><a href="Courses/English/English_template.html">English</a></li>
       <li class="submenu-item"><a href="Courses/Chinese/Chinese_template.html">Chinese</a></li>
+      <li class="submenu-item"><a href="Courses/Putonghua/Putonghua_template.html">Putonghua</a></li>
+      <li class="submenu-item"><a href="Courses/Foreign_Languages/Foreign_Languages_template.html">Foreign Languages</a></li>
+    </ul>
+    <div class="menu-item" data-menu="learning">Self-Regulated Learning <span>+</span></div>
+    <ul class="submenu" id="learning">
+      <li class="submenu-item"><a href="Self_Regulated_Learning/Examination/Examination_template.html">Examination</a></li>
+      <li class="submenu-item"><a href="Self_Regulated_Learning/Tutorial_Services/Tutorial_Services_template.html">Tutorial Services</a></li>
+      <li class="submenu-item"><a href="Self_Regulated_Learning/Activities/Activities_template.html">Activities</a></li>
+      <li class="submenu-item"><a href="Self_Regulated_Learning/Professional_Development/Professional_Development_template.html">Professional Development</a></li>
+    </ul>
+    <div class="menu-item" data-menu="staff">Staff Corner <span>+</span></div>
+    <ul class="submenu" id="staff">
+      <li class="submenu-item"><a href="Staff_Corner/Leadership/Leadership_template.html">Leadership</a></li>
+      <li class="submenu-item"><a href="Staff_Corner/Research/Research_template.html">Research</a></li>
+      <li class="submenu-item"><a href="Staff_Corner/Staff_Development/Staff_Development_template.html">Staff Development</a></li>
+      <li class="submenu-item"><a href="Staff_Corner/Social/Social_template.html">Social</a></li>
     </ul>
   </div>
-
-  <!-- Main Content Section -->
   <div class="content">
     <h1>Welcome to the Language Centre</h1>
-
-    <!-- Carousel -->
     <div class="carousel">
       <div class="carousel-track">
-        <div class="carousel-item">
-          <img src="assets/01.png" alt="Image 1">
-        </div>
-        <div class="carousel-item">
-          <img src="assets/02.png" alt="Image 2">
-        </div>
-        <div class="carousel-item">
-          <img src="assets/03.png" alt="Image 3">
-        </div>
+        <div class="carousel-item"><img src="assets/01.png" alt="Image 1"></div>
+        <div class="carousel-item"><img src="assets/02.png" alt="Image 2"></div>
+        <div class="carousel-item"><img src="assets/03.png" alt="Image 3"></div>
       </div>
       <div class="carousel-buttons">
         <button class="carousel-button" id="prev">❮</button>
         <button class="carousel-button" id="next">❯</button>
       </div>
     </div>
-
-    <!-- Section Boxes -->
     <div class="section-boxes">
       <div class="box" data-box="putonghua">Putonghua</div>
       <div class="box" data-box="chinese">Chinese</div>
       <div class="box" data-box="english">English</div>
       <div class="box" data-box="foreign-languages">Foreign Languages</div>
     </div>
-
-    <!-- Box Content -->
-    <div class="box-content" id="box-content">
-      <!-- Dynamic content will appear here -->
-    </div>
+    <div class="box-content" id="box-content"></div>
   </div>
-
   <script>
-    // Side Menu Toggle Functionality
     const menuItems = document.querySelectorAll('.menu-item');
     menuItems.forEach(item => {
       item.addEventListener('click', () => {
         const menuId = item.getAttribute('data-menu');
         const submenu = document.getElementById(menuId);
-        if (submenu.style.display === 'block') {
-          submenu.style.display = 'none';
-          item.querySelector('span').textContent = '+';
-        } else {
-          submenu.style.display = 'block';
-          item.querySelector('span').textContent = '-';
-        }
+        submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        item.querySelector('span').textContent = submenu.style.display === 'block' ? '-' : '+';
       });
     });
-
-    // Carousel functionality
     const track = document.querySelector('.carousel-track');
     const items = document.querySelectorAll('.carousel-item');
     const prevButton = document.getElementById('prev');
     const nextButton = document.getElementById('next');
     let currentIndex = 0;
-
     const updateCarousel = () => {
       track.style.transform = `translateX(-${currentIndex * 100}%)`;
     };
-
     nextButton.addEventListener('click', () => {
       currentIndex = (currentIndex + 1) % items.length;
       updateCarousel();
     });
-
     prevButton.addEventListener('click', () => {
       currentIndex = (currentIndex - 1 + items.length) % items.length;
       updateCarousel();
     });
-
-    // Box Click Functionality
     const boxes = document.querySelectorAll('.box');
     const boxContent = document.getElementById('box-content');
-
     boxes.forEach(box => {
       box.addEventListener('click', () => {
         const boxId = box.getAttribute('data-box');
@@ -282,5 +129,4 @@
     });
   </script>
 </body>
-
 </html>
