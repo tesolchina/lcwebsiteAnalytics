@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LC Website Analytics</title>
+  <style>
+    /* Style for section boxes */
+    .section-boxes {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+    }
+    .box {
+      width: 150px;
+      height: 100px;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #ddd;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .box:hover {
+      background-color: #e0e0e0;
+    }
+
+    /* Hide box content by default */
+    .box-content {
+      display: none;
+      margin: 20px 0;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+    }
+
+    /* Show active box content */
+    .box-content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to LC Website Analytics</h1>
+  <div class="section-boxes">
+    <div class="box" data-box="putonghua">Putonghua</div>
+    <div class="box" data-box="chinese">Chinese</div>
+    <div class="box" data-box="english">English</div>
+    <div class="box" data-box="foreign-languages">Foreign Languages</div>
+  </div>
+
+  <div class="box-content-container">
+    <div class="box-content" id="putonghua">
+      <h3>Putonghua Section</h3>
+      <p>Details and links about Putonghua courses, resources, and activities.</p>
+    </div>
+    <div class="box-content" id="chinese">
+      <h3>Chinese Section</h3>
+      <p>Details and links about Chinese courses, resources, and activities.</p>
+    </div>
+    <div class="box-content" id="english">
+      <h3>English Section</h3>
+      <p>Details and links about English courses, resources, and activities.</p>
+    </div>
+    <div class="box-content" id="foreign-languages">
+      <h3>Foreign Languages Section</h3>
+      <p>Details and links about Foreign Languages courses, resources, and activities.</p>
+    </div>
+  </div>
+
+  <script>
+    // Get all the boxes and content sections
+    const boxes = document.querySelectorAll('.box');
+    const contents = document.querySelectorAll('.box-content');
+
+    // Add click event listeners to the boxes
+    boxes.forEach(box => {
+      box.addEventListener('click', () => {
+        // Hide all content sections
+        contents.forEach(content => content.classList.remove('active'));
+
+        // Show the corresponding content section
+        const boxId = box.getAttribute('data-box');
+        const contentToShow = document.getElementById(boxId);
+        contentToShow.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
