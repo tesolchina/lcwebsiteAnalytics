@@ -40,7 +40,6 @@
 
     .submenu {
       margin-left: 20px;
-      display: none;
       list-style-type: none;
       padding: 0;
     }
@@ -49,10 +48,14 @@
       font-size: 1em;
       color: #555;
       margin-bottom: 8px;
-      cursor: pointer;
     }
 
-    .submenu-item:hover {
+    .submenu-item a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .submenu-item a:hover {
       color: #007BFF;
     }
 
@@ -133,6 +136,27 @@
       transform: scale(1.05);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
+
+    /* Box Content */
+    .box-content {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .box-content p {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+
+    .box-content a {
+      font-size: 1em;
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    .box-content a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 
@@ -144,10 +168,10 @@
       <span>+</span>
     </div>
     <ul class="submenu" id="about">
-      <li class="submenu-item"><a href="https://lc.hkbu.edu.hk/main/mission/">Mission</a></li>
-      <li class="submenu-item">Staff</li>
-      <li class="submenu-item">Job Vacancies</li>
-      <li class="submenu-item">Contact Us</li>
+      <li class="submenu-item"><a href="newWebsitePlanning/About_Us/mission_template.html">Mission</a></li>
+      <li class="submenu-item"><a href="newWebsitePlanning/About_Us/staff_template.html">Staff</a></li>
+      <li class="submenu-item"><a href="newWebsitePlanning/About_Us/job_vacancies_template.html">Job Vacancies</a></li>
+      <li class="submenu-item"><a href="newWebsitePlanning/About_Us/contact_us_template.html">Contact Us</a></li>
     </ul>
 
     <div class="menu-item" data-menu="courses">
@@ -155,32 +179,10 @@
       <span>+</span>
     </div>
     <ul class="submenu" id="courses">
-      <li class="submenu-item">English</li>
-      <li class="submenu-item">Chinese</li>
-      <li class="submenu-item">Putonghua</li>
-      <li class="submenu-item">Foreign Languages</li>
-    </ul>
-
-    <div class="menu-item" data-menu="self-learning">
-      Self-regulated Language Learning
-      <span>+</span>
-    </div>
-    <ul class="submenu" id="self-learning">
-      <li class="submenu-item">Examination</li>
-      <li class="submenu-item">Tutorial Services</li>
-      <li class="submenu-item">Activities</li>
-      <li class="submenu-item">Professional Development</li>
-    </ul>
-
-    <div class="menu-item" data-menu="staff-corner">
-      Staff Corner
-      <span>+</span>
-    </div>
-    <ul class="submenu" id="staff-corner">
-      <li class="submenu-item">Leadership</li>
-      <li class="submenu-item">Research</li>
-      <li class="submenu-item">Staff Development</li>
-      <li class="submenu-item">Social</li>
+      <li class="submenu-item"><a href="newWebsitePlanning/Courses/english_template.html">English</a></li>
+      <li class="submenu-item"><a href="newWebsitePlanning/Courses/chinese_template.html">Chinese</a></li>
+      <li class="submenu-item"><a href="newWebsitePlanning/Courses/putonghua_template.html">Putonghua</a></li>
+      <li class="submenu-item"><a href="newWebsitePlanning/Courses/foreign_languages_template.html">Foreign Languages</a></li>
     </ul>
   </div>
 
@@ -211,6 +213,11 @@
       <div class="box" data-box="chinese">Chinese</div>
       <div class="box" data-box="english">English</div>
       <div class="box" data-box="foreign-languages">Foreign Languages</div>
+    </div>
+
+    <!-- Box Content -->
+    <div class="box-content" id="box-content">
+      <!-- Dynamic content will appear here -->
     </div>
   </div>
 
@@ -251,6 +258,28 @@
       currentIndex = (currentIndex - 1 + items.length) % items.length;
       updateCarousel();
     });
+
+    // Box Click Functionality
+    const boxes = document.querySelectorAll('.box');
+    const boxContent = document.getElementById('box-content');
+
+    boxes.forEach(box => {
+      box.addEventListener('click', () => {
+        const boxId = box.getAttribute('data-box');
+        let contentHTML = '';
+        if (boxId === 'putonghua') {
+          contentHTML = `<p>Putonghua: Learn about our Putonghua courses.</p><a href="newWebsitePlanning/Courses/putonghua_template.html">View Details</a>`;
+        } else if (boxId === 'chinese') {
+          contentHTML = `<p>Chinese: Explore our Chinese language programs.</p><a href="newWebsitePlanning/Courses/chinese_template.html">View Details</a>`;
+        } else if (boxId === 'english') {
+          contentHTML = `<p>English: Enhance your English skills with us.</p><a href="newWebsitePlanning/Courses/english_template.html">View Details</a>`;
+        } else if (boxId === 'foreign-languages') {
+          contentHTML = `<p>Foreign Languages: Broaden your horizons with foreign languages.</p><a href="newWebsitePlanning/Courses/foreign_languages_template.html">View Details</a>`;
+        }
+        boxContent.innerHTML = contentHTML;
+      });
+    });
   </script>
 </body>
+
 </html>
