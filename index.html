@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Centre Front Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    /* Side Menu Styles */
+    .side-menu {
+      width: 250px;
+      background-color: #f4f4f4;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    .menu-item {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu-item:hover {
+      color: #007BFF;
+    }
+
+    .submenu {
+      margin-left: 20px;
+      display: none;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .submenu-item {
+      font-size: 1em;
+      color: #555;
+      margin-bottom: 8px;
+      cursor: pointer;
+    }
+
+    .submenu-item:hover {
+      color: #007BFF;
+    }
+
+    /* Content Section */
+    .content {
+      flex-grow: 1;
+      padding: 20px;
+    }
+
+    /* Carousel */
+    .carousel {
+      width: 100%;
+      max-width: 1200px;
+      margin: 20px auto;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-item {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+      max-height: 600px;
+    }
+
+    .carousel-buttons {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .carousel-button {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    /* Boxes */
+    .section-boxes {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 30px auto;
+      max-width: 1200px;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: #f2f2f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      margin: 10px;
+      text-align: center;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .box a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .box a:hover {
+      color: #007BFF;
+    }
+  </style>
+</head>
+<body>
+  <!-- Side Menu -->
+  <div class="side-menu">
+    <div class="menu-item" data-menu="about">
+      About Us
+      <span>+</span>
+    </div>
+    <ul class="submenu" id="about">
+      <li class="submenu-item"><a href="https://lc.hkbu.edu.hk/main/mission/">Mission</a></li>
+      <li class="submenu-item">Staff</li>
+      <li class="submenu-item">Job Vacancies</li>
+      <li class="submenu-item">Contact Us</li>
+    </ul>
+
+    <div class="menu-item" data-menu="courses">
+      Courses
+      <span>+</span>
+    </div>
+    <ul class="submenu" id="courses">
+      <li class="submenu-item">English</li>
+      <li class="submenu-item">Chinese</li>
+      <li class="submenu-item">Putonghua</li>
+      <li class="submenu-item">Foreign Languages</li>
+    </ul>
+
+    <div class="menu-item" data-menu="self-learning">
+      Self-regulated Language Learning
+      <span>+</span>
+    </div>
+    <ul class="submenu" id="self-learning">
+      <li class="submenu-item">Examination</li>
+      <li class="submenu-item">Tutorial Services</li>
+      <li class="submenu-item">Activities</li>
+      <li class="submenu-item">Professional Development</li>
+    </ul>
+
+    <div class="menu-item" data-menu="staff-corner">
+      Staff Corner
+      <span>+</span>
+    </div>
+    <ul class="submenu" id="staff-corner">
+      <li class="submenu-item">Leadership</li>
+      <li class="submenu-item">Research</li>
+      <li class="submenu-item">Staff Development</li>
+      <li class="submenu-item">Social</li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <!-- Carousel -->
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="carousel-item">
+          <img src="01.png" alt="Image 1">
+        </div>
+        <div class="carousel-item">
+          <img src="02.png" alt="Image 2">
+        </div>
+        <div class="carousel-item">
+          <img src="03.png" alt="Image 3">
+        </div>
+      </div>
+      <div class="carousel-buttons">
+        <button class="carousel-button" id="prev">❮</button>
+        <button class="carousel-button" id="next">❯</button>
+      </div>
+    </div>
+
+    <!-- Section Boxes -->
+    <div class="section-boxes">
+      <div class="box">
+        <a href="putonghua.html">Putonghua</a>
+      </div>
+      <div class="box">
+        <a href="chinese.html">Chinese</a>
+      </div>
+      <div class="box">
+        <a href="english.html">English</a>
+      </div>
+      <div class="box">
+        <a href="foreign-languages.html">Foreign Languages</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Side Menu Toggle Functionality
+    const menuItems = document.querySelectorAll('.menu-item');
+    menuItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const menuId = item.getAttribute('data-menu');
+        const submenu = document.getElementById(menuId);
+        if (submenu.style.display === 'block') {
+          submenu.style.display = 'none';
+          item.querySelector('span').textContent = '+';
+        } else {
+          submenu.style.display = 'block';
+          item.querySelector('span').textContent = '-';
+        }
+      });
+    });
+
+    // Carousel functionality
+    const track = document.querySelector('.carousel-track');
+    const items = document.querySelectorAll('.carousel-item');
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+    let currentIndex = 0;
+
+    const updateCarousel = () => {
+      track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    };
+
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % items.length;
+      updateCarousel();
+    });
+
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + items.length) % items.length;
+      updateCarousel();
+    });
+  </script>
+</body>
+</html>
