@@ -49,12 +49,14 @@
         .staff-grid {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: space-between;
             gap: 20px;
+            max-width: 800px;
+            margin: 0 auto; /* Center the grid */
         }
 
         .staff-box {
-            width: 150px;
+            width: 30%; /* 3 boxes per row */
             text-align: center;
             border: 1px solid #ccc;
             border-radius: 10px;
@@ -92,6 +94,7 @@
         }
     </style>
     <script>
+        // Function to switch tabs
         function showTab(tabName) {
             const tabs = document.querySelectorAll('.tab');
             const contents = document.querySelectorAll('.tab-content');
@@ -103,96 +106,328 @@
             document.querySelector(`#${tabName}`).classList.add('active');
         }
 
+        // Function to toggle extra info in staff boxes
         function toggleInfo(box) {
             box.classList.toggle('active');
         }
     </script>
 </head>
 <body>
-    <h1>Staff Profile</h1>
+    <h1>Staff Profiles</h1>
     <div class="tab-container">
         <div class="tab active" data-tab="admin-team" onclick="showTab('admin-team')">Administrative Team</div>
         <div class="tab" data-tab="chinese-section" onclick="showTab('chinese-section')">Chinese Section</div>
         <div class="tab" data-tab="english-section" onclick="showTab('english-section')">English Section</div>
         <div class="tab" data-tab="putonghua-section" onclick="showTab('putonghua-section')">Putonghua Section</div>
-        <div class="tab" data-tab="foreign-languages" onclick="showTab('foreign-languages')">Foreign Languages</div>
+        <div class="tab" data-tab="foreign-languages" onclick="showTab('foreign-languages')">Foreign Languages Section</div>
     </div>
 
     <!-- Administrative Team -->
     <div id="admin-team" class="tab-content active">
         <div class="staff-grid">
-            <!-- Repeat the box for each staff member -->
+            <!-- 6 staff boxes -->
             <div class="staff-box" onclick="toggleInfo(this)">
                 <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
-                <h3>Staff 1</h3>
+                <h3>Admin Staff 1</h3>
                 <div class="extra-info">
-                    <p>Dummy Role</p>
-                    <p>Email: <a href="mailto:staff1@example.com">staff1@example.com</a></p>
+                    <p>Role: Administrator</p>
+                    <p>Email: <a href="mailto:admin1@example.com">admin1@example.com</a></p>
                 </div>
             </div>
-            <!-- Add 5 more dummy staff members for this tab -->
+            <div class="staff-box" onclick="toggleInfo(this)">
+                <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+                <h3>Admin Staff 2</h3>
+                <div class="extra-info">
+                    <p>Role: Administrator</p>
+                    <p>Email: <a href="mailto:admin2@example.com">admin2@example.com</a></p>
+                </div>
+            </div>
+            <div class="staff-box" onclick="toggleInfo(this)">
+                <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+                <h3>Admin Staff 3</h3>
+                <div class="extra-info">
+                    <p>Role: Administrator</p>
+                    <p>Email: <a href="mailto:admin3@example.com">admin3@example.com</a></p>
+                </div>
+            </div>
+            <div class="staff-box" onclick="toggleInfo(this)">
+                <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+                <h3>Admin Staff 4</h3>
+                <div class="extra-info">
+                    <p>Role: Administrator</p>
+                    <p>Email: <a href="mailto:admin4@example.com">admin4@example.com</a></p>
+                </div>
+            </div>
+            <div class="staff-box" onclick="toggleInfo(this)">
+                <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+                <h3>Admin Staff 5</h3>
+                <div class="extra-info">
+                    <p>Role: Administrator</p>
+                    <p>Email: <a href="mailto:admin5@example.com">admin5@example.com</a></p>
+                </div>
+            </div>
+            <div class="staff-box" onclick="toggleInfo(this)">
+                <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+                <h3>Admin Staff 6</h3>
+                <div class="extra-info">
+                    <p>Role: Administrator</p>
+                    <p>Email: <a href="mailto:admin6@example.com">admin6@example.com</a></p>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Chinese Section -->
     <div id="chinese-section" class="tab-content">
         <div class="staff-grid">
+            <!-- 6 staff boxes -->
             <div class="staff-box" onclick="toggleInfo(this)">
                 <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
-                <h3>Staff 2</h3>
+                <h3>Chinese Staff 1</h3>
                 <div class="extra-info">
-                    <p>Dummy Role</p>
-                    <p>Email: <a href="mailto:staff2@example.com">staff2@example.com</a></p>
+                    <p>Role: Chinese Instructor</p>
+                    <p>Email: <a href="mailto:chinese1@example.com">chinese1@example.com</a></p>
                 </div>
             </div>
-            <!-- Add 5 more dummy staff members for this tab -->
+            <div class="staff-box" onclick="toggleInfo(this)">
+                <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+                <h3>Chinese Staff 2</h3>
+                <div class="extra-info">
+                    <p>Role: Chinese Instructor</p>
+                    <p>Email: <a href="mailto:chinese1@example.com">chinese1@example.com</a></p>
+                </div>
+            </div>
+            <div class="staff-box" onclick="toggleInfo(this)">
+                <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+                <h3>Chinese Staff 3</h3>
+                <div class="extra-info">
+                    <p>Role: Chinese Instructor</p>
+                    <p>Email: <a href="mailto:chinese1@example.com">chinese1@example.com</a></p>
+                </div>
+            </div>
+            <div class="staff-box" onclick="toggleInfo(this)">
+                <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+                <h3>Chinese Staff 4</h3>
+                <div class="extra-info">
+                    <p>Role: Chinese Instructor</p>
+                    <p>Email: <a href="mailto:chinese1@example.com">chinese1@example.com</a></p>
+                </div>
+            </div>
+            <div class="staff-box" onclick="toggleInfo(this)">
+                <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+                <h3>Chinese Staff 5</h3>
+                <div class="extra-info">
+                    <p>Role: Chinese Instructor</p>
+                    <p>Email: <a href="mailto:chinese1@example.com">chinese1@example.com</a></p>
+                </div>
+            </div>
+            <div class="staff-box" onclick="toggleInfo(this)">
+                <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+                <h3>Chinese Staff 6</h3>
+                <div class="extra-info">
+                    <p>Role: Chinese Instructor</p>
+                    <p>Email: <a href="mailto:chinese1@example.com">chinese1@example.com</a></p>
+                </div>
+            </div>
+        
         </div>
     </div>
 
-    <!-- English Section -->
-    <div id="english-section" class="tab-content">
-        <div class="staff-grid">
-            <div class="staff-box" onclick="toggleInfo(this)">
-                <img src="/workspaces/lcwebsiteAnalytics/assets/meilin-1.jpg" alt="Dr Meilin Chen">
-                <h3>Dr Meilin Chen</h3>
-                <div class="extra-info">
-                    <p>Lecturer I</p>
-                    <p>Email: <a href="mailto:meilin22@hkbu.edu.hk">meilin22@hkbu.edu.hk</a></p>
-                    <p><a href="/workspaces/lcwebsiteAnalytics/About_Us/Staff/staff_profile_temp.html">View Full Profile</a></p>
-                </div>
+<!-- English Section -->
+<div id="english-section" class="tab-content">
+    <div class="staff-grid">
+        <!-- Meilin's box -->
+        <div class="staff-box" onclick="toggleInfo(this)">
+            <img src="/workspaces/lcwebsiteAnalytics/assets/meilin-1.jpg" alt="Dr Meilin Chen">
+            <h3>Dr Meilin Chen</h3>
+            <div class="extra-info">
+                <p>Role: Lecturer I</p>
+                <p>Email: <a href="mailto:meilin22@hkbu.edu.hk">meilin22@hkbu.edu.hk</a></p>
+                <p><a href="/workspaces/lcwebsiteAnalytics/About_Us/Staff/staff_profile_temp.html">View Full Profile</a></p>
             </div>
-            <!-- Add 5 more dummy staff members for this tab -->
         </div>
-    </div>
 
-    <!-- Putonghua Section -->
-    <div id="putonghua-section" class="tab-content">
-        <div class="staff-grid">
-            <div class="staff-box" onclick="toggleInfo(this)">
-                <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
-                <h3>Staff 3</h3>
-                <div class="extra-info">
-                    <p>Dummy Role</p>
-                    <p>Email: <a href="mailto:staff3@example.com">staff3@example.com</a></p>
-                </div>
+        <!-- Dummy Staff 1 -->
+        <div class="staff-box" onclick="toggleInfo(this)">
+            <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+            <h3>English Staff 1</h3>
+            <div class="extra-info">
+                <p>Role: English Instructor</p>
+                <p>Email: <a href="mailto:english1@example.com">english1@example.com</a></p>
             </div>
-            <!-- Add 5 more dummy staff members for this tab -->
         </div>
-    </div>
 
-    <!-- Foreign Languages Section -->
-    <div id="foreign-languages" class="tab-content">
-        <div class="staff-grid">
-            <div class="staff-box" onclick="toggleInfo(this)">
-                <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
-                <h3>Staff 4</h3>
-                <div class="extra-info">
-                    <p>Dummy Role</p>
-                    <p>Email: <a href="mailto:staff4@example.com">staff4@example.com</a></p>
-                </div>
+        <!-- Dummy Staff 2 -->
+        <div class="staff-box" onclick="toggleInfo(this)">
+            <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+            <h3>English Staff 2</h3>
+            <div class="extra-info">
+                <p>Role: English Instructor</p>
+                <p>Email: <a href="mailto:english2@example.com">english2@example.com</a></p>
             </div>
-            <!-- Add 5 more dummy staff members for this tab -->
+        </div>
+
+        <!-- Dummy Staff 3 -->
+        <div class="staff-box" onclick="toggleInfo(this)">
+            <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+            <h3>English Staff 3</h3>
+            <div class="extra-info">
+                <p>Role: English Instructor</p>
+                <p>Email: <a href="mailto:english3@example.com">english3@example.com</a></p>
+            </div>
+        </div>
+
+        <!-- Dummy Staff 4 -->
+        <div class="staff-box" onclick="toggleInfo(this)">
+            <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+            <h3>English Staff 4</h3>
+            <div class="extra-info">
+                <p>Role: English Instructor</p>
+                <p>Email: <a href="mailto:english4@example.com">english4@example.com</a></p>
+            </div>
+        </div>
+
+        <!-- Dummy Staff 5 -->
+        <div class="staff-box" onclick="toggleInfo(this)">
+            <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+            <h3>English Staff 5</h3>
+            <div class="extra-info">
+                <p>Role: English Instructor</p>
+                <p>Email: <a href="mailto:english5@example.com">english5@example.com</a></p>
+            </div>
         </div>
     </div>
+</div>
+
+
+<!-- Putonghua Section -->
+<div id="putonghua-section" class="tab-content">
+    <div class="staff-grid">
+        <!-- Dummy Staff 1 -->
+        <div class="staff-box" onclick="toggleInfo(this)">
+            <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+            <h3>Putonghua Staff 1</h3>
+            <div class="extra-info">
+                <p>Role: Putonghua Instructor</p>
+                <p>Email: <a href="mailto:putonghua1@example.com">putonghua1@example.com</a></p>
+            </div>
+        </div>
+
+        <!-- Dummy Staff 2 -->
+        <div class="staff-box" onclick="toggleInfo(this)">
+            <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+            <h3>Putonghua Staff 2</h3>
+            <div class="extra-info">
+                <p>Role: Putonghua Instructor</p>
+                <p>Email: <a href="mailto:putonghua2@example.com">putonghua2@example.com</a></p>
+            </div>
+        </div>
+
+        <!-- Dummy Staff 3 -->
+        <div class="staff-box" onclick="toggleInfo(this)">
+            <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+            <h3>Putonghua Staff 3</h3>
+            <div class="extra-info">
+                <p>Role: Putonghua Instructor</p>
+                <p>Email: <a href="mailto:putonghua3@example.com">putonghua3@example.com</a></p>
+            </div>
+        </div>
+
+        <!-- Dummy Staff 4 -->
+        <div class="staff-box" onclick="toggleInfo(this)">
+            <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+            <h3>Putonghua Staff 4</h3>
+            <div class="extra-info">
+                <p>Role: Putonghua Instructor</p>
+                <p>Email: <a href="mailto:putonghua4@example.com">putonghua4@example.com</a></p>
+            </div>
+        </div>
+
+        <!-- Dummy Staff 5 -->
+        <div class="staff-box" onclick="toggleInfo(this)">
+            <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+            <h3>Putonghua Staff 5</h3>
+            <div class="extra-info">
+                <p>Role: Putonghua Instructor</p>
+                <p>Email: <a href="mailto:putonghua5@example.com">putonghua5@example.com</a></p>
+            </div>
+        </div>
+
+        <!-- Dummy Staff 6 -->
+        <div class="staff-box" onclick="toggleInfo(this)">
+            <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+            <h3>Putonghua Staff 6</h3>
+            <div class="extra-info">
+                <p>Role: Putonghua Instructor</p>
+                <p>Email: <a href="mailto:putonghua6@example.com">putonghua6@example.com</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Foreign Languages Section -->
+<div id="foreign-languages" class="tab-content">
+    <div class="staff-grid">
+        <!-- Dummy Staff 1 -->
+        <div class="staff-box" onclick="toggleInfo(this)">
+            <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+            <h3>Foreign Languages Staff 1</h3>
+            <div class="extra-info">
+                <p>Role: Foreign Languages Instructor</p>
+                <p>Email: <a href="mailto:foreign1@example.com">foreign1@example.com</a></p>
+            </div>
+        </div>
+
+        <!-- Dummy Staff 2 -->
+        <div class="staff-box" onclick="toggleInfo(this)">
+            <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+            <h3>Foreign Languages Staff 2</h3>
+            <div class="extra-info">
+                <p>Role: Foreign Languages Instructor</p>
+                <p>Email: <a href="mailto:foreign2@example.com">foreign2@example.com</a></p>
+            </div>
+        </div>
+
+        <!-- Dummy Staff 3 -->
+        <div class="staff-box" onclick="toggleInfo(this)">
+            <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+            <h3>Foreign Languages Staff 3</h3>
+            <div class="extra-info">
+                <p>Role: Foreign Languages Instructor</p>
+                <p>Email: <a href="mailto:foreign3@example.com">foreign3@example.com</a></p>
+            </div>
+        </div>
+
+        <!-- Dummy Staff 4 -->
+        <div class="staff-box" onclick="toggleInfo(this)">
+            <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+            <h3>Foreign Languages Staff 4</h3>
+            <div class="extra-info">
+                <p>Role: Foreign Languages Instructor</p>
+                <p>Email: <a href="mailto:foreign4@example.com">foreign4@example.com</a></p>
+            </div>
+        </div>
+
+        <!-- Dummy Staff 5 -->
+        <div class="staff-box" onclick="toggleInfo(this)">
+            <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+            <h3>Foreign Languages Staff 5</h3>
+            <div class="extra-info">
+                <p>Role: Foreign Languages Instructor</p>
+                <p>Email: <a href="mailto:foreign5@example.com">foreign5@example.com</a></p>
+            </div>
+        </div>
+
+        <!-- Dummy Staff 6 -->
+        <div class="staff-box" onclick="toggleInfo(this)">
+            <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+            <h3>Foreign Languages Staff 6</h3>
+            <div class="extra-info">
+                <p>Role: Foreign Languages Instructor</p>
+                <p>Email: <a href="mailto:foreign6@example.com">foreign6@example.com</a></p>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
