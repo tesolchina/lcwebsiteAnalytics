@@ -3,16 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staff Profile - Dr CHEN Meilin</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Staff Profile with Tabs</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .staff-profile {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header Section */
+        .profile-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 15px;
+        }
+
+        .profile-header-left {
+            flex: 0 0 120px;
+            margin-right: 20px;
+        }
+
+        .profile-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ccc;
+        }
+
+        .profile-header-right {
+            flex: 1;
+        }
+
+        .profile-header-right h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .profile-header-right h2 {
+            margin: 5px 0 0;
+            font-size: 18px;
+            color: #666;
+        }
+
+        /* Tabs Section */
+        .tabs {
+            margin-top: 20px;
+        }
+
+        .tab-list {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            border-bottom: none;
+            background-color: #f9f9f9;
+            margin-right: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .tab:hover {
+            background-color: #e0e0e0;
+        }
+
+        .tab.active {
+            background-color: #fff;
+            font-weight: bold;
+            border-top: 2px solid #0078D7;
+        }
+
+        .tab-content {
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .tab-pane {
+            display: none; /* Hidden by default */
+        }
+
+        .tab-pane.active {
+            display: block; /* Show only the active tab content */
+        }
+    </style>
 </head>
 <body>
     <div class="staff-profile">
         <!-- Header Section -->
         <header class="profile-header">
-            <img src="profile-photo.jpg" alt="Dr CHEN Meilin" class="profile-photo">
-            <h1>Dr CHEN Meilin</h1>
-            <h2>Lecturer I</h2>
+            <div class="profile-header-left">
+                <!-- Profile Picture -->
+                <img src="/workspaces/lcwebsiteAnalytics/assets/meilin-1.jpg" alt="Dr CHEN Meilin" class="profile-photo">
+            </div>
+            <div class="profile-header-right">
+                <!-- Name and Title -->
+                <h1>Dr CHEN Meilin</h1>
+                <h2>Lecturer I</h2>
+            </div>
         </header>
 
         <!-- Tabs Section -->
@@ -27,13 +135,12 @@
 
             <!-- Tab Contents -->
             <div class="tab-content">
-                <!-- BIO Section -->
                 <div class="tab-pane active" id="bio">
-                    <p>Meilin received her PhD in English from City University of Hong Kong...</p>
+                    <h3>BIO</h3>
+                    <p>Meilin received her PhD in English from City University of Hong Kong. She is interested in corpus linguistics, learner corpus research, English for Academic Purposes, data-driven learning, and computer-assisted discourse analysis.</p>
                 </div>
-
-                <!-- Research Interests Section -->
                 <div class="tab-pane" id="research">
+                    <h3>Research Interests</h3>
                     <ul>
                         <li>Corpus linguistics</li>
                         <li>English for Academic Purposes</li>
@@ -41,42 +148,20 @@
                         <li>Computer-assisted discourse analysis</li>
                     </ul>
                 </div>
-
-                <!-- Publications Section -->
                 <div class="tab-pane" id="publications">
-                    <h3>Journal Articles</h3>
-                    <div class="toggle">
-                        <button class="toggle-btn">Expand</button>
-                        <ul class="toggle-content">
-                            <li>Chen, M. & Flowerdew, J. (forthcoming)...</li>
-                            <li>Chen, M. (2013)...</li>
-                        </ul>
-                    </div>
-                    <h3>Book Chapters</h3>
-                    <div class="toggle">
-                        <button class="toggle-btn">Expand</button>
-                        <ul class="toggle-content">
-                            <li>Chen, M. (2017)...</li>
-                            <li>Chen, M. (2016)...</li>
-                        </ul>
-                    </div>
+                    <h3>Publications</h3>
+                    <p>Selected publications and book chapters are listed here...</p>
                 </div>
-
-                <!-- Courses Taught Section -->
                 <div class="tab-pane" id="courses">
-                    <h3>Credit-Bearing Courses</h3>
+                    <h3>Courses Taught</h3>
                     <ul>
                         <li>University English I</li>
-                    </ul>
-                    <h3>Non-Credit Bearing Courses</h3>
-                    <ul>
                         <li>Writing Enhancement Course</li>
                         <li>IELTS Preparation Course: Reading and Writing</li>
                     </ul>
                 </div>
-
-                <!-- Contact Information Section -->
                 <div class="tab-pane" id="contact">
+                    <h3>Contact Information</h3>
                     <p><strong>Telephone:</strong> 3411 7266</p>
                     <p><strong>Email:</strong> <a href="mailto:meilin22@hkbu.edu.hk">meilin22@hkbu.edu.hk</a></p>
                     <p><strong>Office:</strong> OEE1013</p>
@@ -85,6 +170,25 @@
         </div>
     </div>
 
-    <script src="scripts.js"></script>
+    <script>
+        // JavaScript for Tabs
+        document.addEventListener("DOMContentLoaded", function () {
+            const tabs = document.querySelectorAll(".tab");
+            const tabPanes = document.querySelectorAll(".tab-pane");
+
+            tabs.forEach((tab) => {
+                tab.addEventListener("click", function () {
+                    // Remove active class from all tabs and tab panes
+                    tabs.forEach((t) => t.classList.remove("active"));
+                    tabPanes.forEach((pane) => pane.classList.remove("active"));
+
+                    // Add active class to the clicked tab and corresponding tab pane
+                    this.classList.add("active");
+                    const targetPane = document.getElementById(this.dataset.tab);
+                    targetPane.classList.add("active");
+                });
+            });
+        });
+    </script>
 </body>
 </html>

@@ -1,9 +1,198 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Staff Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Profile with Tabs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .tab-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            background: #f0f0f0;
+            border: 1px solid #ccc;
+            margin-right: 5px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .tab.active {
+            background: #007BFF;
+            color: white;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .staff-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .staff-box {
+            width: 150px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            background: #fff;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .staff-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .staff-box img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+        .staff-box h3 {
+            margin: 10px 0 0;
+            font-size: 16px;
+        }
+
+        .staff-box .extra-info {
+            display: none;
+            margin-top: 10px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .staff-box.active .extra-info {
+            display: block;
+        }
+    </style>
+    <script>
+        function showTab(tabName) {
+            const tabs = document.querySelectorAll('.tab');
+            const contents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => tab.classList.remove('active'));
+            contents.forEach(content => content.classList.remove('active'));
+
+            document.querySelector(`.tab[data-tab="${tabName}"]`).classList.add('active');
+            document.querySelector(`#${tabName}`).classList.add('active');
+        }
+
+        function toggleInfo(box) {
+            box.classList.toggle('active');
+        }
+    </script>
 </head>
 <body>
-<h1>Staff</h1>
+    <h1>Staff Profile</h1>
+    <div class="tab-container">
+        <div class="tab active" data-tab="admin-team" onclick="showTab('admin-team')">Administrative Team</div>
+        <div class="tab" data-tab="chinese-section" onclick="showTab('chinese-section')">Chinese Section</div>
+        <div class="tab" data-tab="english-section" onclick="showTab('english-section')">English Section</div>
+        <div class="tab" data-tab="putonghua-section" onclick="showTab('putonghua-section')">Putonghua Section</div>
+        <div class="tab" data-tab="foreign-languages" onclick="showTab('foreign-languages')">Foreign Languages</div>
+    </div>
+
+    <!-- Administrative Team -->
+    <div id="admin-team" class="tab-content active">
+        <div class="staff-grid">
+            <!-- Repeat the box for each staff member -->
+            <div class="staff-box" onclick="toggleInfo(this)">
+                <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+                <h3>Staff 1</h3>
+                <div class="extra-info">
+                    <p>Dummy Role</p>
+                    <p>Email: <a href="mailto:staff1@example.com">staff1@example.com</a></p>
+                </div>
+            </div>
+            <!-- Add 5 more dummy staff members for this tab -->
+        </div>
+    </div>
+
+    <!-- Chinese Section -->
+    <div id="chinese-section" class="tab-content">
+        <div class="staff-grid">
+            <div class="staff-box" onclick="toggleInfo(this)">
+                <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+                <h3>Staff 2</h3>
+                <div class="extra-info">
+                    <p>Dummy Role</p>
+                    <p>Email: <a href="mailto:staff2@example.com">staff2@example.com</a></p>
+                </div>
+            </div>
+            <!-- Add 5 more dummy staff members for this tab -->
+        </div>
+    </div>
+
+    <!-- English Section -->
+    <div id="english-section" class="tab-content">
+        <div class="staff-grid">
+            <div class="staff-box" onclick="toggleInfo(this)">
+                <img src="/workspaces/lcwebsiteAnalytics/assets/meilin-1.jpg" alt="Dr Meilin Chen">
+                <h3>Dr Meilin Chen</h3>
+                <div class="extra-info">
+                    <p>Lecturer I</p>
+                    <p>Email: <a href="mailto:meilin22@hkbu.edu.hk">meilin22@hkbu.edu.hk</a></p>
+                    <p><a href="/workspaces/lcwebsiteAnalytics/About_Us/Staff/staff_profile_temp.html">View Full Profile</a></p>
+                </div>
+            </div>
+            <!-- Add 5 more dummy staff members for this tab -->
+        </div>
+    </div>
+
+    <!-- Putonghua Section -->
+    <div id="putonghua-section" class="tab-content">
+        <div class="staff-grid">
+            <div class="staff-box" onclick="toggleInfo(this)">
+                <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+                <h3>Staff 3</h3>
+                <div class="extra-info">
+                    <p>Dummy Role</p>
+                    <p>Email: <a href="mailto:staff3@example.com">staff3@example.com</a></p>
+                </div>
+            </div>
+            <!-- Add 5 more dummy staff members for this tab -->
+        </div>
+    </div>
+
+    <!-- Foreign Languages Section -->
+    <div id="foreign-languages" class="tab-content">
+        <div class="staff-grid">
+            <div class="staff-box" onclick="toggleInfo(this)">
+                <img src="/workspaces/lcwebsiteAnalytics/assets/profile_dummy.jpeg" alt="Staff">
+                <h3>Staff 4</h3>
+                <div class="extra-info">
+                    <p>Dummy Role</p>
+                    <p>Email: <a href="mailto:staff4@example.com">staff4@example.com</a></p>
+                </div>
+            </div>
+            <!-- Add 5 more dummy staff members for this tab -->
+        </div>
+    </div>
 </body>
 </html>
