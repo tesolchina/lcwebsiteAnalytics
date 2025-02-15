@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Profile - Dr CHEN Meilin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="staff-profile">
+        <!-- Header Section -->
+        <header class="profile-header">
+            <img src="profile-photo.jpg" alt="Dr CHEN Meilin" class="profile-photo">
+            <h1>Dr CHEN Meilin</h1>
+            <h2>Lecturer I</h2>
+        </header>
+
+        <!-- Tabs Section -->
+        <div class="tabs">
+            <ul class="tab-list">
+                <li class="tab active" data-tab="bio">BIO</li>
+                <li class="tab" data-tab="research">Research Interests</li>
+                <li class="tab" data-tab="publications">Publications</li>
+                <li class="tab" data-tab="courses">Courses Taught</li>
+                <li class="tab" data-tab="contact">Contact Information</li>
+            </ul>
+
+            <!-- Tab Contents -->
+            <div class="tab-content">
+                <!-- BIO Section -->
+                <div class="tab-pane active" id="bio">
+                    <p>Meilin received her PhD in English from City University of Hong Kong...</p>
+                </div>
+
+                <!-- Research Interests Section -->
+                <div class="tab-pane" id="research">
+                    <ul>
+                        <li>Corpus linguistics</li>
+                        <li>English for Academic Purposes</li>
+                        <li>Learner corpus research</li>
+                        <li>Computer-assisted discourse analysis</li>
+                    </ul>
+                </div>
+
+                <!-- Publications Section -->
+                <div class="tab-pane" id="publications">
+                    <h3>Journal Articles</h3>
+                    <div class="toggle">
+                        <button class="toggle-btn">Expand</button>
+                        <ul class="toggle-content">
+                            <li>Chen, M. & Flowerdew, J. (forthcoming)...</li>
+                            <li>Chen, M. (2013)...</li>
+                        </ul>
+                    </div>
+                    <h3>Book Chapters</h3>
+                    <div class="toggle">
+                        <button class="toggle-btn">Expand</button>
+                        <ul class="toggle-content">
+                            <li>Chen, M. (2017)...</li>
+                            <li>Chen, M. (2016)...</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Courses Taught Section -->
+                <div class="tab-pane" id="courses">
+                    <h3>Credit-Bearing Courses</h3>
+                    <ul>
+                        <li>University English I</li>
+                    </ul>
+                    <h3>Non-Credit Bearing Courses</h3>
+                    <ul>
+                        <li>Writing Enhancement Course</li>
+                        <li>IELTS Preparation Course: Reading and Writing</li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information Section -->
+                <div class="tab-pane" id="contact">
+                    <p><strong>Telephone:</strong> 3411 7266</p>
+                    <p><strong>Email:</strong> <a href="mailto:meilin22@hkbu.edu.hk">meilin22@hkbu.edu.hk</a></p>
+                    <p><strong>Office:</strong> OEE1013</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
