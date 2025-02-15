@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Workshop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+
+    /* Banner Section */
+    .banner {
+      background: #f4a261;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .banner h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .banner p {
+      font-size: 1.2em;
+    }
+
+    /* Carousel Section */
+    .carousel {
+      position: relative;
+      max-width: 800px;
+      margin: 20px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel img {
+      width: 100%;
+      display: none;
+    }
+
+    .carousel img.active {
+      display: block;
+    }
+
+    /* Carousel Navigation */
+    .carousel-nav {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+
+    .carousel-nav button {
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+
+    .carousel-nav button:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Main Content Section */
+    .main-content {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+
+    /* Tab Container */
+    .tab-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .tab {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+      background: #eee;
+      border: 1px solid #ccc;
+      margin: 0 5px;
+      border-radius: 5px;
+    }
+
+    .tab.active {
+      background: #f4a261;
+      color: white;
+    }
+
+    /* Tab Content */
+    .tab-content {
+      display: none;
+      padding: 20px;
+      background: #fafafa;
+      border: 1px solid #ccc;
+      margin: 20px 0;
+      border-radius: 5px;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    /* Tags Section */
+    .tags {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #2a9d8f;
+      color: white;
+      padding: 5px 10px;
+      margin: 5px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Banner -->
+  <div class="banner">
+    <h1>English Workshop</h1>
+    <p>Enhance your communication skills with our interactive sessions</p>
+  </div>
+
+  <!-- Carousel Section -->
+  <div class="carousel">
+    <img src="assets/01.png" alt="Workshop Image 1" class="active" onerror="this.src='assets/placeholder.png';">
+    <img src="assets/02.png" alt="Workshop Image 2" onerror="this.src='assets/placeholder.png';">
+    <img src="assets/03.png" alt="Workshop Image 3" onerror="this.src='assets/placeholder.png';">
+
+    <!-- Navigation Buttons -->
+    <div class="carousel-nav">
+      <button onclick="prevSlide()">&#10094;</button>
+      <button onclick="nextSlide()">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Tabs -->
+    <div class="tab-container">
+      <div class="tab active" onclick="showTab('overview')">Overview</div>
+      <div class="tab" onclick="showTab('accomplishment')">Accomplishments</div>
+    </div>
+
+    <!-- Tab Content -->
+    <div id="overview" class="tab-content active">
+      <h2>Workshop Overview</h2>
+      <p>Welcome to the English Workshop! This workshop includes:</p>
+      <ul>
+        <li>Interactive communication skills sessions</li>
+        <li>Practical exercises and group activities</li>
+        <li>Insights from experienced facilitators</li>
+      </ul>
+      <p><a href="registration.html">Click here to register for this workshop</a></p>
+    </div>
+    <div id="accomplishment" class="tab-content">
+      <h2>Accomplishments</h2>
+      <p>Here are some highlights from previous workshops:</p>
+      <div>
+        <h3>Success Story</h3>
+        <p>Meet John Doe, who improved his public speaking skills in just one session!</p>
+        <p><a href="success-story.html">Read more</a></p>
+      </div>
+      <div>
+        <h3>Instructor Insights</h3>
+        <p>Discover how our techniques make learning fun and effective.</p>
+        <p><a href="instructor-insights.html">Read more</a></p>
+      </div>
+    </div>
+
+    <!-- Tags -->
+    <div class="tags">
+      <span class="tag">#EnglishWorkshop</span>
+      <span class="tag">#CommunicationSkills</span>
+      <span class="tag">#InteractiveLearning</span>
+    </div>
+  </div>
+
+  <script>
+    // Tab Switching Logic
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll('.tab');
+      const contents = document.querySelectorAll('.tab-content');
+
+      tabs.forEach(tab => tab.classList.remove('active'));
+      contents.forEach(content => content.classList.remove('active'));
+
+      document.querySelector('.tab[onclick="showTab(\'' + tabId + '\')"]').classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    }
+
+    // Carousel Logic
+    const carouselImages = document.querySelectorAll('.carousel img');
+    let currentSlideIndex = 0;
+
+    function showSlide(index) {
+      carouselImages.forEach((img, i) => {
+        img.classList.remove('active');
+        if (i === index) {
+          img.classList.add('active');
+        }
+      });
+    }
+
+    function nextSlide() {
+      currentSlideIndex = (currentSlideIndex + 1) % carouselImages.length;
+      showSlide(currentSlideIndex);
+    }
+
+    function prevSlide() {
+      currentSlideIndex = (currentSlideIndex - 1 + carouselImages.length) % carouselImages.length;
+      showSlide(currentSlideIndex);
+    }
+
+    // Auto-rotate slides every 3 seconds
+    setInterval(nextSlide, 3000);
+  </script>
+</body>
+
+</html>
