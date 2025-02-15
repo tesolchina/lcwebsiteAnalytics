@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activities Gateway</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Banner Section */
+    .banner {
+      background: #f4a261;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .banner h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .banner p {
+      font-size: 1.2em;
+    }
+
+    /* Lookup Section */
+    .lookup-container {
+      background-color: #f1f1f1;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .lookup-container select {
+      padding: 10px;
+      font-size: 1em;
+      width: 200px;
+    }
+
+    /* Filtered Results Section */
+    .filtered-results {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .activity-box {
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      border-radius: 5px;
+      background-color: white;
+    }
+
+    .activity-box h3 {
+      margin: 10px 0;
+    }
+
+    .activity-box a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #2a9d8f;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .activity-box a:hover {
+      background-color: #e76f51;
+    }
+
+    /* Toggle Section */
+    .view-all-toggle {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .view-all-toggle button {
+      padding: 10px 20px;
+      font-size: 1.2em;
+      color: white;
+      background: #264653;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .view-all-toggle button:hover {
+      background: #2a9d8f;
+    }
+
+    /* All Activities Section */
+    .activity-boxes {
+      display: none;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .activity-boxes.active {
+      display: flex;
+    }
+
+    /* No Results Found */
+    .no-results {
+      text-align: center;
+      color: red;
+      font-size: 1.2em;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Banner -->
+  <div class="banner">
+    <h1>Explore Activities</h1>
+    <p>Your guide to various learning and development activities</p>
+  </div>
+
+  <!-- Lookup UI -->
+  <div class="lookup-container">
+    <select id="monthYear" onchange="filterActivities()">
+      <option value="">Select Month/Year</option>
+      <option value="sept2024">Sept 2024</option>
+      <option value="oct2024">Oct 2024</option>
+      <option value="nov2024">Nov 2024</option>
+      <option value="aug2025">Aug 2025</option>
+    </select>
+    <select id="section" onchange="filterActivities()">
+      <option value="">Select Section</option>
+      <option value="chinese">Chinese</option>
+      <option value="english">English</option>
+      <option value="putonghua">Putonghua</option>
+      <option value="foreign">Foreign Languages</option>
+    </select>
+    <select id="sdg" onchange="filterActivities()">
+      <option value="">Select SDG</option>
+      <option value="1">SDG 1</option>
+      <option value="2">SDG 2</option>
+      <option value="3">SDG 3</option>
+      <option value="4">SDG 4</option>
+      <option value="17">SDG 17</option>
+    </select>
+  </div>
+
+  <!-- Filtered Results -->
+  <div class="filtered-results" id="filteredResults">
+    <!-- Filtered activity boxes will appear here -->
+  </div>
+
+  <!-- No Results Found -->
+  <div class="no-results" id="noResults" style="display: none;">
+    No activities found matching your criteria.
+  </div>
+
+  <!-- View All Activities Toggle -->
+  <div class="view-all-toggle">
+    <button onclick="toggleAllActivities()">View All Activities</button>
+  </div>
+
+  <!-- All Activities Section -->
+  <div id="allActivities" class="activity-boxes">
+    <div class="activity-box" data-monthyear="sept2024" data-section="english" data-sdg="4">
+      <h3>English Workshop</h3>
+      <p>Improve your communication skills</p>
+      <a href="#">More Info</a>
+    </div>
+    <div class="activity-box" data-monthyear="oct2024" data-section="chinese" data-sdg="3">
+      <h3>Chinese Culture Day</h3>
+      <p>Explore Chinese traditions and culture</p>
+      <a href="#">More Info</a>
+    </div>
+    <div class="activity-box" data-monthyear="nov2024" data-section="foreign" data-sdg="2">
+      <h3>French Cuisine Night</h3>
+      <p>Learn about French culture through food</p>
+      <a href="#">More Info</a>
+    </div>
+  </div>
+
+  <script>
+    // Filter Activities Based on Dropdown Selections
+    function filterActivities() {
+      const monthYear = document.getElementById('monthYear').value.toLowerCase();
+      const section = document.getElementById('section').value.toLowerCase();
+      const sdg = document.getElementById('sdg').value.toLowerCase();
+
+      const allActivities = document.querySelectorAll('#allActivities .activity-box');
+      const filteredResults = document.getElementById('filteredResults');
+      const noResults = document.getElementById('noResults');
+      filteredResults.innerHTML = ''; // Clear previous results
+      let found = false;
+
+      allActivities.forEach(activity => {
+        const matchesMonthYear = activity.dataset.monthyear.toLowerCase().includes(monthYear) || !monthYear;
+        const matchesSection = activity.dataset.section.toLowerCase().includes(section) || !section;
+        const matchesSdg = activity.dataset.sdg.toLowerCase().includes(sdg) || !sdg;
+
+        if (matchesMonthYear && matchesSection && matchesSdg) {
+          filteredResults.appendChild(activity.cloneNode(true));
+          found = true;
+        }
+      });
+
+      noResults.style.display = found ? 'none' : 'block';
+    }
+
+    // Toggle View All Activities
+    function toggleAllActivities() {
+      const allActivities = document.getElementById('allActivities');
+      allActivities.classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>
