@@ -38,11 +38,18 @@
       overflow: hidden;
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      height: 400px; /* Set a fixed height for the carousel */
+      display: flex;
+      align-items: center; /* Vertically center the images */
+      justify-content: center;
+      background: #f9f9f9; /* Add a background color for blank space */
     }
 
     .carousel img {
-      width: 100%;
+      max-width: 100%;
+      max-height: 100%;
       display: none;
+      object-fit: contain; /* Ensure images fit within the container without distortion */
     }
 
     .carousel img.active {
