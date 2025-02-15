@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chinese Course 101</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+
+    /* Banner Section */
+    .banner {
+      background: #f4a261;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .banner h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .banner p {
+      font-size: 1.2em;
+    }
+
+    /* Main Content Section */
+    .main-content {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #ffffff;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+    }
+
+    /* Tab Container */
+    .tab-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .tab {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+      background: #eee;
+      border: 1px solid #ccc;
+      margin: 0 5px;
+    }
+
+    .tab.active {
+      background: #f4a261;
+      color: white;
+    }
+
+    /* Tab Content */
+    .tab-content {
+      display: none;
+      padding: 20px;
+      background: #fafafa;
+      border: 1px solid #ccc;
+      margin: 20px 0;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    /* Tags Section */
+    .tags {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #f4a261;
+      color: white;
+      padding: 5px 10px;
+      margin: 5px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Banner -->
+  <div class="banner">
+    <h1>Chinese Course 101</h1>
+    <p>Explore the fundamentals of Chinese language and culture</p>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Tabs -->
+    <div class="tab-container">
+      <div class="tab active" onclick="showTab('overview')">Course Overview</div>
+      <div class="tab" onclick="showTab('storytelling')">Storytelling</div>
+    </div>
+
+    <!-- Tab Content -->
+    <div id="overview" class="tab-content active">
+      <h2>Course Overview</h2>
+      <p>Welcome to Chinese Course 101! This course includes:</p>
+      <ul>
+        <li>Introduction to Chinese language and grammar</li>
+        <li>Basic vocabulary for daily conversations</li>
+        <li>Cultural insights and practical applications</li>
+      </ul>
+      <p><a href="registration.html">Click here to register for this course</a></p>
+    </div>
+    <div id="storytelling" class="tab-content">
+      <h2>Storytelling</h2>
+      <p>Hear from our students and instructors:</p>
+      <div>
+        <h3>Student Success Story</h3>
+        <p>Meet Jane Doe, who mastered Chinese in just one semester!</p>
+        <p><a href="success-story.html">Read more</a></p>
+      </div>
+      <div>
+        <h3>Instructor Insights</h3>
+        <p>Learn how our interactive methods make learning Chinese enjoyable.</p>
+        <p><a href="instructor-insights.html">Read more</a></p>
+      </div>
+    </div>
+
+    <!-- Tags -->
+    <div class="tags">
+      <span class="tag">#Chinese101</span>
+      <span class="tag">#LanguageLearning</span>
+      <span class="tag">#SuccessStories</span>
+    </div>
+  </div>
+
+  <script>
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll('.tab');
+      const contents = document.querySelectorAll('.tab-content');
+
+      tabs.forEach(tab => tab.classList.remove('active'));
+      contents.forEach(content => content.classList.remove('active'));
+
+      document.querySelector('.tab[onclick="showTab(\'' + tabId + '\')"]').classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    }
+  </script>
+</body>
+</html>
