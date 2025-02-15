@@ -1,9 +1,218 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Chinese Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chinese Courses Gateway</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Banner Section */
+    .banner {
+      background: #f4a261;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .banner h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .banner p {
+      font-size: 1.2em;
+    }
+
+    /* Lookup Section */
+    .lookup-container {
+      background-color: #f1f1f1;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .lookup-container select {
+      padding: 10px;
+      font-size: 1em;
+      width: 200px;
+    }
+
+    /* Filtered Results Section */
+    .filtered-results {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .course-box {
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      border-radius: 5px;
+      background-color: white;
+    }
+
+    .course-box h3 {
+      margin: 10px 0;
+    }
+
+    .course-box a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #2a9d8f;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .course-box a:hover {
+      background-color: #e76f51;
+    }
+
+    /* Toggle Section */
+    .view-all-toggle {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .view-all-toggle button {
+      padding: 10px 20px;
+      font-size: 1.2em;
+      color: white;
+      background: #264653;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .view-all-toggle button:hover {
+      background: #2a9d8f;
+    }
+
+    /* All Courses Section */
+    .course-boxes {
+      display: none;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .course-boxes.active {
+      display: flex;
+    }
+  </style>
 </head>
 <body>
-<h1>Chinese</h1>
+
+  <!-- Banner -->
+  <div class="banner">
+    <h1>Explore Chinese Courses</h1>
+    <p>Your guide to all required, elective, and supplementary courses</p>
+  </div>
+
+  <!-- Lookup UI -->
+  <div class="lookup-container">
+    <select id="courseType" onchange="filterCourses()">
+      <option value="">Select Course Type</option>
+      <option value="required">Required</option>
+      <option value="elective">Elective</option>
+      <option value="supplementary">Supplementary</option>
+    </select>
+    <select id="teacher" onchange="filterCourses()">
+      <option value="">Select Teacher</option>
+      <option value="Dr. Wong">Dr. Wong</option>
+      <option value="Ms. Chan">Ms. Chan</option>
+      <option value="Mr. Lee">Mr. Lee</option>
+    </select>
+    <select id="day" onchange="filterCourses()">
+      <option value="">Select Day</option>
+      <option value="Monday">Monday</option>
+      <option value="Tuesday">Tuesday</option>
+      <option value="Wednesday">Wednesday</option>
+    </select>
+    <select id="semester" onchange="filterCourses()">
+      <option value="">Select Semester</option>
+      <option value="Fall">Fall</option>
+      <option value="Spring">Spring</option>
+    </select>
+  </div>
+
+  <!-- Filtered Results -->
+  <div class="filtered-results" id="filteredResults">
+    <!-- Filtered course boxes will appear here -->
+  </div>
+
+  <!-- View All Courses Toggle -->
+  <div class="view-all-toggle">
+    <button onclick="toggleAllCourses()">View All Courses</button>
+  </div>
+
+  <!-- All Courses Section -->
+  <div id="allCourses" class="course-boxes">
+    <div class="course-box" data-type="required" data-teacher="Dr. Wong" data-day="Monday" data-semester="Fall">
+      <h3>Chinese 101</h3>
+      <p>Introduction to Chinese Language</p>
+      <a href="#">More Info</a>
+    </div>
+    <div class="course-box" data-type="elective" data-teacher="Ms. Chan" data-day="Tuesday" data-semester="Spring">
+      <h3>Chinese Culture</h3>
+      <p>A deep dive into Chinese traditions</p>
+      <a href="#">More Info</a>
+    </div>
+    <div class="course-box" data-type="supplementary" data-teacher="Mr. Lee" data-day="Wednesday" data-semester="Fall">
+      <h3>Chinese Writing Workshop</h3>
+      <p>Enhance your writing skills</p>
+      <a href="#">More Info</a>
+    </div>
+    <div class="course-box" data-type="required" data-teacher="Dr. Wong" data-day="Monday" data-semester="Spring">
+      <h3>Chinese Grammar Basics</h3>
+      <p>Learn essential grammar rules</p>
+      <a href="#">More Info</a>
+    </div>
+  </div>
+
+  <script>
+    // Filter Courses Based on Dropdown Selections
+    function filterCourses() {
+      const courseType = document.getElementById('courseType').value.toLowerCase();
+      const teacher = document.getElementById('teacher').value.toLowerCase();
+      const day = document.getElementById('day').value.toLowerCase();
+      const semester = document.getElementById('semester').value.toLowerCase();
+
+      const allCourses = document.querySelectorAll('#allCourses .course-box');
+      const filteredResults = document.getElementById('filteredResults');
+      filteredResults.innerHTML = ''; // Clear previous results
+
+      allCourses.forEach(course => {
+        const matchesType = course.dataset.type.toLowerCase().includes(courseType) || !courseType;
+        const matchesTeacher = course.dataset.teacher.toLowerCase().includes(teacher) || !teacher;
+        const matchesDay = course.dataset.day.toLowerCase().includes(day) || !day;
+        const matchesSemester = course.dataset.semester.toLowerCase().includes(semester) || !semester;
+
+        if (matchesType && matchesTeacher && matchesDay && matchesSemester) {
+          filteredResults.appendChild(course.cloneNode(true));
+        }
+      });
+    }
+
+    // Toggle View All Courses
+    function toggleAllCourses() {
+      const allCourses = document.getElementById('allCourses');
+      allCourses.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
