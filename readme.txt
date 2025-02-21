@@ -35,7 +35,7 @@ Activities
 - Competitions
 - Student Publications
 
-we'll write a python program to create 
+we'll write a python program to create folder in the local drive C:\Users\simonwang\OneDrive - Hong Kong Baptist University\LC website new 
 
 
 
