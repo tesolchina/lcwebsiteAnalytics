@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Centre | Hong Kong Baptist University - Redesign Prototype</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        .nav-menu a:hover {
+            color: #ffd700;
+        }
+
+        /* Hero Section with Video */
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 2rem auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .video-placeholder {
+            background: linear-gradient(45deg, #1e3c72, #2a5298);
+            padding: 3rem;
+            text-align: center;
+            color: white;
+        }
+
+        .video-placeholder h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .video-placeholder p {
+            opacity: 0.8;
+            margin-bottom: 1rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #ffd700;
+            color: #1e3c72;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Leadership Message Section */
+        .leadership-section {
+            background: white;
+            padding: 4rem 0;
+        }
+
+        .leadership-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .leadership-photo {
+            text-align: center;
+        }
+
+        .photo-placeholder {
+            width: 250px;
+            height: 300px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.1rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .leadership-message h2 {
+            color: #1e3c72;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .leadership-message .subtitle {
+            color: #666;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .leadership-message p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Toggle Sections */
+        .toggle-section {
+            padding: 4rem 0;
+            background: #f8f9fa;
+        }
+
+        .toggle-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .toggle-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #1e3c72;
+            margin-bottom: 3rem;
+        }
+
+        .toggle-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .toggle-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .toggle-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .toggle-header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 1.5rem;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .toggle-header h3 {
+            font-size: 1.3rem;
+            margin: 0;
+        }
+
+        .toggle-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .toggle-content-area {
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .toggle-content-area.active {
+            padding: 1.5rem;
+            max-height: 500px;
+        }
+
+        .toggle-content-area ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .toggle-content-area li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+            color: #666;
+        }
+
+        .toggle-content-area li:last-child {
+            border-bottom: none;
+        }
+
+        /* Course Highlights */
+        .courses-section {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .courses-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .courses-title {
+            font-size: 2.5rem;
+            color: #1e3c72;
+            margin-bottom: 3rem;
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .course-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .course-card:hover {
+            transform: scale(1.05);
+        }
+
+        .course-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1e3c72;
+            color: white;
+            padding: 3rem 0 1rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-info {
+            margin-bottom: 2rem;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.2);
+            padding-top: 1rem;
+            opacity: 0.8;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .leadership-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2rem;
+            }
+
+            .toggle-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* Animation for smooth interactions */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">Language Centre | HKBU</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#examinations">Examinations & Resources</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Video -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title fade-in">Welcome to Language Centre</h1>
+            <p class="hero-subtitle fade-in">Empowering Communication, Enriching Lives</p>
+            
+            <div class="video-container fade-in">
+                <!-- Video placeholder - replace with actual LC corporate video -->
+                <div class="video-placeholder">
+                    <h3>🎥 LC Corporate Video</h3>
+                    <p>Discover our mission, vision, and commitment to excellence in language education</p>
+                    <p><em>Video will be embedded here: LC corporate video showcasing our facilities, programs, and student success stories</em></p>
+                </div>
+            </div>
+
+            <div class="cta-buttons fade-in">
+                <a href="#courses" class="btn btn-primary">Explore Courses</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Message Section -->
+    <section class="leadership-section">
+        <div class="leadership-content">
+            <div class="leadership-photo fade-in">
+                <div class="photo-placeholder">
+                    📸<br>Professional Photo<br>of LC Head<br>(Cissy Li)
+                </div>
+            </div>
+            <div class="leadership-message fade-in">
+                <h2>A Message from Our Director</h2>
+                <p class="subtitle">Cissy Li, Head of Language Centre</p>
+                <p>Welcome to the Language Centre at Hong Kong Baptist University. For over two decades, we have been dedicated to fostering linguistic excellence and cultural understanding in our diverse academic community.</p>
+                <p>Our mission extends beyond language instruction—we create transformative learning experiences that empower students to communicate confidently across cultures and succeed in an interconnected world.</p>
+                <p>Whether you're beginning your language journey or seeking advanced proficiency, our experienced faculty and innovative programs are here to support your academic and personal growth.</p>
+                <p><em>Join us in celebrating the power of language to bridge cultures and open new possibilities.</em></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toggle Information Sections -->
+    <section class="toggle-section">
+        <div class="toggle-content">
+            <h2 class="toggle-title fade-in">Stay Connected & Informed</h2>
+            
+            <div class="toggle-grid">
+                <div class="toggle-card fade-in">
+                    <div class="toggle-header" onclick="toggleContent(this)">
+                        <h3>📢 News & Announcements</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="toggle-content-area">
+                        <ul>
+                            <li>🎓 Fall 2025 Course Registration Now Open</li>
+                            <li>📅 Language Proficiency Test Dates Released</li>
+                            <li>🌟 New Digital Credentials Program Launch</li>
+                            <li>📚 Enhanced E-Learning Resources Available</li>
+                            <li>🎯 Study Abroad Partnership Announcements</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="toggle-card fade-in">
+                    <div class="toggle-header" onclick="toggleContent(this)">
+                        <h3>🏆 Recent Achievements</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="toggle-content-area">
+                        <ul>
+                            <li>🥇 International Speech Contest Winners 2024</li>
+                            <li>📖 Student Publications in Academic Journals</li>
+                            <li>🌍 Faculty Recognition at Global Conference</li>
+                            <li>💡 Innovation in Language Teaching Award</li>
+                            <li>👥 Outstanding Community Service Recognition</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="toggle-card fade-in">
+                    <div class="toggle-header" onclick="toggleContent(this)">
+                        <h3>📅 Upcoming Events</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="toggle-content-area">
+                        <ul>
+                            <li>🎭 Cultural Performance Festival - Sept 15</li>
+                            <li>💼 Professional Development Workshop - Sept 22</li>
+                            <li>🗣️ Language Exchange Meetup - Sept 28</li>
+                            <li>📝 Academic Writing Seminar - Oct 5</li>
+                            <li>🌏 International Students Orientation - Oct 12</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="toggle-card fade-in">
+                    <div class="toggle-header" onclick="toggleContent(this)">
+                        <h3>⭐ Student Spotlights</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="toggle-content-area">
+                        <ul>
+                            <li>🎤 Sarah Chen - International Debate Champion</li>
+                            <li>📚 Michael Wong - Published Research Author</li>
+                            <li>🌟 Lisa Zhang - Cultural Ambassador Award</li>
+                            <li>💼 David Park - Corporate Partnership Success</li>
+                            <li>🎨 Emma Liu - Creative Writing Excellence</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Highlights -->
+    <section class="courses-section">
+        <div class="courses-content">
+            <h2 class="courses-title fade-in">Our Core Programs</h2>
+            <div class="courses-grid">
+                <div class="course-card fade-in">
+                    <h3>English</h3>
+                    <p>Academic & Professional English programs designed for success in global communication</p>
+                </div>
+                <div class="course-card fade-in">
+                    <h3>Chinese</h3>
+                    <p>Comprehensive Chinese language courses for heritage learners and international students</p>
+                </div>
+                <div class="course-card fade-in">
+                    <h3>Putonghua</h3>
+                    <p>Standard Mandarin training with focus on pronunciation and professional communication</p>
+                </div>
+                <div class="course-card fade-in">
+                    <h3>Foreign Languages</h3>
+                    <p>Diverse language offerings including Japanese, Korean, French, and Spanish</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Language Centre</h3>
+                <p>Hong Kong Baptist University</p>
+                <p>Empowering Communication • Enriching Lives</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hong Kong Baptist University Language Centre. All rights reserved.</p>
+                <p>Prototype for smartlessons.hkbu.tech/lc/demo.index</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Toggle Functionality -->
+    <script>
+        function toggleContent(header) {
+            const contentArea = header.nextElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            const isActive = contentArea.classList.contains('active');
+            
+            // Close all other toggle sections
+            document.querySelectorAll('.toggle-content-area').forEach(area => {
+                area.classList.remove('active');
+            });
+            document.querySelectorAll('.toggle-icon').forEach(i => {
+                i.textContent = '+';
+                i.style.transform = 'translateY(-50%)';
+            });
+            
+            // Open clicked section if it wasn't already open
+            if (!isActive) {
+                contentArea.classList.add('active');
+                icon.textContent = '−';
+                icon.style.transform = 'translateY(-50%) rotate(180deg)';
+            }
+        }
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationDelay = '0.1s';
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

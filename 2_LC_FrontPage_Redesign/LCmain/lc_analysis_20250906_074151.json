@@ -1,0 +1,1743 @@
+{
+  "crawl_info": {
+    "timestamp": "20250906_074151",
+    "url": "https://lc.hkbu.edu.hk/main/",
+    "title": "Home | Language Centre 語文中心 , Hong Kong Baptist University 香港浸會大學"
+  },
+  "structure": {
+    "total_elements": 858,
+    "div_count": 245,
+    "nav_elements": 1,
+    "header_elements": 11,
+    "link_count": 125,
+    "image_count": 28,
+    "form_count": 0,
+    "script_count": 23,
+    "style_count": 10
+  },
+  "navigation": {
+    "main_nav": [
+      {
+        "tag": "nav",
+        "classes": [
+          "dt-main-menu"
+        ],
+        "id": "",
+        "links": [
+          {
+            "text": "COURSES",
+            "href": "https://lc.hkbu.edu.hk/main/chinese-course/",
+            "is_external": false
+          },
+          {
+            "text": "Chinese",
+            "href": "https://lc.hkbu.edu.hk/main/chinese-course/",
+            "is_external": false
+          },
+          {
+            "text": "English",
+            "href": "https://lc.hkbu.edu.hk/main/english-course/",
+            "is_external": false
+          },
+          {
+            "text": "Putonghua/Mandarin",
+            "href": "https://lc.hkbu.edu.hk/main/pth-course/",
+            "is_external": false
+          },
+          {
+            "text": "Foreign Languages",
+            "href": "https://lc.hkbu.edu.hk/main/foreign-course/",
+            "is_external": false
+          },
+          {
+            "text": "Minor Programmes",
+            "href": "https://lc.hkbu.edu.hk/main/minor-programmes/",
+            "is_external": false
+          },
+          {
+            "text": "STUDENTS",
+            "href": "https://lc.hkbu.edu.hk/main/examinations/",
+            "is_external": false
+          },
+          {
+            "text": "Digital Credentials For Your Achievements",
+            "href": "https://lc.hkbu.edu.hk/main/credly/",
+            "is_external": false
+          },
+          {
+            "text": "Examinations",
+            "href": "https://lc.hkbu.edu.hk/main/examinations/",
+            "is_external": false
+          },
+          {
+            "text": "Enhancement Services",
+            "href": "https://lc.hkbu.edu.hk/main/enhancement-services/",
+            "is_external": false
+          },
+          {
+            "text": "Competitions & Activities",
+            "href": "https://lc.hkbu.edu.hk/main/activities/",
+            "is_external": false
+          },
+          {
+            "text": "Sponsorships & Awards",
+            "href": "https://lc.hkbu.edu.hk/main/sponsorshipsawards/",
+            "is_external": false
+          },
+          {
+            "text": "Intercultural Immersive Exchange programme 2025",
+            "href": "https://lc.hkbu.edu.hk/main/iie/",
+            "is_external": false
+          },
+          {
+            "text": "Independent Learning",
+            "href": "https://lc.hkbu.edu.hk/main/self-learning/",
+            "is_external": false
+          },
+          {
+            "text": "PEOPLE",
+            "href": "https://lc.hkbu.edu.hk/main/staff-chinese/",
+            "is_external": false
+          },
+          {
+            "text": "Chinese Section",
+            "href": "https://lc.hkbu.edu.hk/main/staff-chinese/",
+            "is_external": false
+          },
+          {
+            "text": "English Section",
+            "href": "https://lc.hkbu.edu.hk/main/staff-english/",
+            "is_external": false
+          },
+          {
+            "text": "Putonghua Section",
+            "href": "https://lc.hkbu.edu.hk/main/staff-putonghua/",
+            "is_external": false
+          },
+          {
+            "text": "Foreign Languages Section",
+            "href": "https://lc.hkbu.edu.hk/main/staff-foreign/",
+            "is_external": false
+          },
+          {
+            "text": "Research/Project Staff",
+            "href": "https://lc.hkbu.edu.hk/main/staff-research/",
+            "is_external": false
+          },
+          {
+            "text": "Administrative, Clerical & Technical Support Staff",
+            "href": "https://lc.hkbu.edu.hk/main/staff-support/",
+            "is_external": false
+          },
+          {
+            "text": "ABOUT US",
+            "href": "https://lc.hkbu.edu.hk/main/mission/",
+            "is_external": false
+          },
+          {
+            "text": "Mission",
+            "href": "https://lc.hkbu.edu.hk/main/mission/",
+            "is_external": false
+          },
+          {
+            "text": "Photo Gallery",
+            "href": "https://lc.hkbu.edu.hk/main/photos/",
+            "is_external": false
+          },
+          {
+            "text": "Job Vacancies",
+            "href": "https://lc.hkbu.edu.hk/main/job/",
+            "is_external": false
+          },
+          {
+            "text": "Contact Us",
+            "href": "https://lc.hkbu.edu.hk/main/#section_contact_us",
+            "is_external": false
+          },
+          {
+            "text": "2024 Conference",
+            "href": "https://lc.hkbu.edu.hk/main/lconference/",
+            "is_external": false
+          },
+          {
+            "text": "Professional Development",
+            "href": "https://lc.hkbu.edu.hk/main/ira/",
+            "is_external": false
+          },
+          {
+            "text": "Projects",
+            "href": "https://lc.hkbu.edu.hk/main/projects/",
+            "is_external": false
+          },
+          {
+            "text": "Global Citizenship",
+            "href": "https://global-citizenship.hkbu.edu.hk/",
+            "is_external": false
+          },
+          {
+            "text": "GCAP3056 Taking a stand",
+            "href": "https://lc.hkbu.edu.hk/main/gcap-3056/",
+            "is_external": false
+          },
+          {
+            "text": "The Poetry e-Corpus",
+            "href": "https://www.poetryreading.org/",
+            "is_external": true
+          },
+          {
+            "text": "The Blue Sparrow – English Poetry for all",
+            "href": "https://app.poetryreading.org/",
+            "is_external": true
+          },
+          {
+            "text": "Scholarship Bulletin",
+            "href": "https://lc.hkbu.edu.hk/main/lc-scholarship-bulletin/",
+            "is_external": false
+          },
+          {
+            "text": "Publications",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2018/",
+            "is_external": false
+          },
+          {
+            "text": "2023",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2023/",
+            "is_external": false
+          },
+          {
+            "text": "2022",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2022/",
+            "is_external": false
+          },
+          {
+            "text": "2021",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2021/",
+            "is_external": false
+          },
+          {
+            "text": "2020",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2020/",
+            "is_external": false
+          },
+          {
+            "text": "2019",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2019/",
+            "is_external": false
+          },
+          {
+            "text": "2018",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2018/",
+            "is_external": false
+          },
+          {
+            "text": "2017",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2017/",
+            "is_external": false
+          },
+          {
+            "text": "2016",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2016/",
+            "is_external": false
+          },
+          {
+            "text": "2015",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2015/",
+            "is_external": false
+          },
+          {
+            "text": "2014",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2014/",
+            "is_external": false
+          },
+          {
+            "text": "2013",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2013/",
+            "is_external": false
+          },
+          {
+            "text": "2012",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2012/",
+            "is_external": false
+          },
+          {
+            "text": "2011",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2011/",
+            "is_external": false
+          },
+          {
+            "text": "International Research Advisors Scheme",
+            "href": "https://lc.hkbu.edu.hk/main/ira/",
+            "is_external": false
+          },
+          {
+            "text": "Staff Corner",
+            "href": "https://lc.hkbu.edu.hk/main/download/",
+            "is_external": false
+          }
+        ]
+      },
+      {
+        "tag": "ul",
+        "classes": [
+          "menu"
+        ],
+        "id": "primary-menu",
+        "links": [
+          {
+            "text": "COURSES",
+            "href": "https://lc.hkbu.edu.hk/main/chinese-course/",
+            "is_external": false
+          },
+          {
+            "text": "Chinese",
+            "href": "https://lc.hkbu.edu.hk/main/chinese-course/",
+            "is_external": false
+          },
+          {
+            "text": "English",
+            "href": "https://lc.hkbu.edu.hk/main/english-course/",
+            "is_external": false
+          },
+          {
+            "text": "Putonghua/Mandarin",
+            "href": "https://lc.hkbu.edu.hk/main/pth-course/",
+            "is_external": false
+          },
+          {
+            "text": "Foreign Languages",
+            "href": "https://lc.hkbu.edu.hk/main/foreign-course/",
+            "is_external": false
+          },
+          {
+            "text": "Minor Programmes",
+            "href": "https://lc.hkbu.edu.hk/main/minor-programmes/",
+            "is_external": false
+          },
+          {
+            "text": "STUDENTS",
+            "href": "https://lc.hkbu.edu.hk/main/examinations/",
+            "is_external": false
+          },
+          {
+            "text": "Digital Credentials For Your Achievements",
+            "href": "https://lc.hkbu.edu.hk/main/credly/",
+            "is_external": false
+          },
+          {
+            "text": "Examinations",
+            "href": "https://lc.hkbu.edu.hk/main/examinations/",
+            "is_external": false
+          },
+          {
+            "text": "Enhancement Services",
+            "href": "https://lc.hkbu.edu.hk/main/enhancement-services/",
+            "is_external": false
+          },
+          {
+            "text": "Competitions & Activities",
+            "href": "https://lc.hkbu.edu.hk/main/activities/",
+            "is_external": false
+          },
+          {
+            "text": "Sponsorships & Awards",
+            "href": "https://lc.hkbu.edu.hk/main/sponsorshipsawards/",
+            "is_external": false
+          },
+          {
+            "text": "Intercultural Immersive Exchange programme 2025",
+            "href": "https://lc.hkbu.edu.hk/main/iie/",
+            "is_external": false
+          },
+          {
+            "text": "Independent Learning",
+            "href": "https://lc.hkbu.edu.hk/main/self-learning/",
+            "is_external": false
+          },
+          {
+            "text": "PEOPLE",
+            "href": "https://lc.hkbu.edu.hk/main/staff-chinese/",
+            "is_external": false
+          },
+          {
+            "text": "Chinese Section",
+            "href": "https://lc.hkbu.edu.hk/main/staff-chinese/",
+            "is_external": false
+          },
+          {
+            "text": "English Section",
+            "href": "https://lc.hkbu.edu.hk/main/staff-english/",
+            "is_external": false
+          },
+          {
+            "text": "Putonghua Section",
+            "href": "https://lc.hkbu.edu.hk/main/staff-putonghua/",
+            "is_external": false
+          },
+          {
+            "text": "Foreign Languages Section",
+            "href": "https://lc.hkbu.edu.hk/main/staff-foreign/",
+            "is_external": false
+          },
+          {
+            "text": "Research/Project Staff",
+            "href": "https://lc.hkbu.edu.hk/main/staff-research/",
+            "is_external": false
+          },
+          {
+            "text": "Administrative, Clerical & Technical Support Staff",
+            "href": "https://lc.hkbu.edu.hk/main/staff-support/",
+            "is_external": false
+          },
+          {
+            "text": "ABOUT US",
+            "href": "https://lc.hkbu.edu.hk/main/mission/",
+            "is_external": false
+          },
+          {
+            "text": "Mission",
+            "href": "https://lc.hkbu.edu.hk/main/mission/",
+            "is_external": false
+          },
+          {
+            "text": "Photo Gallery",
+            "href": "https://lc.hkbu.edu.hk/main/photos/",
+            "is_external": false
+          },
+          {
+            "text": "Job Vacancies",
+            "href": "https://lc.hkbu.edu.hk/main/job/",
+            "is_external": false
+          },
+          {
+            "text": "Contact Us",
+            "href": "https://lc.hkbu.edu.hk/main/#section_contact_us",
+            "is_external": false
+          },
+          {
+            "text": "2024 Conference",
+            "href": "https://lc.hkbu.edu.hk/main/lconference/",
+            "is_external": false
+          },
+          {
+            "text": "Professional Development",
+            "href": "https://lc.hkbu.edu.hk/main/ira/",
+            "is_external": false
+          },
+          {
+            "text": "Projects",
+            "href": "https://lc.hkbu.edu.hk/main/projects/",
+            "is_external": false
+          },
+          {
+            "text": "Global Citizenship",
+            "href": "https://global-citizenship.hkbu.edu.hk/",
+            "is_external": false
+          },
+          {
+            "text": "GCAP3056 Taking a stand",
+            "href": "https://lc.hkbu.edu.hk/main/gcap-3056/",
+            "is_external": false
+          },
+          {
+            "text": "The Poetry e-Corpus",
+            "href": "https://www.poetryreading.org/",
+            "is_external": true
+          },
+          {
+            "text": "The Blue Sparrow – English Poetry for all",
+            "href": "https://app.poetryreading.org/",
+            "is_external": true
+          },
+          {
+            "text": "Scholarship Bulletin",
+            "href": "https://lc.hkbu.edu.hk/main/lc-scholarship-bulletin/",
+            "is_external": false
+          },
+          {
+            "text": "Publications",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2018/",
+            "is_external": false
+          },
+          {
+            "text": "2023",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2023/",
+            "is_external": false
+          },
+          {
+            "text": "2022",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2022/",
+            "is_external": false
+          },
+          {
+            "text": "2021",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2021/",
+            "is_external": false
+          },
+          {
+            "text": "2020",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2020/",
+            "is_external": false
+          },
+          {
+            "text": "2019",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2019/",
+            "is_external": false
+          },
+          {
+            "text": "2018",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2018/",
+            "is_external": false
+          },
+          {
+            "text": "2017",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2017/",
+            "is_external": false
+          },
+          {
+            "text": "2016",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2016/",
+            "is_external": false
+          },
+          {
+            "text": "2015",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2015/",
+            "is_external": false
+          },
+          {
+            "text": "2014",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2014/",
+            "is_external": false
+          },
+          {
+            "text": "2013",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2013/",
+            "is_external": false
+          },
+          {
+            "text": "2012",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2012/",
+            "is_external": false
+          },
+          {
+            "text": "2011",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2011/",
+            "is_external": false
+          },
+          {
+            "text": "International Research Advisors Scheme",
+            "href": "https://lc.hkbu.edu.hk/main/ira/",
+            "is_external": false
+          },
+          {
+            "text": "Staff Corner",
+            "href": "https://lc.hkbu.edu.hk/main/download/",
+            "is_external": false
+          }
+        ]
+      },
+      {
+        "tag": "ul",
+        "classes": [
+          "sub-menu"
+        ],
+        "id": "",
+        "links": [
+          {
+            "text": "Chinese",
+            "href": "https://lc.hkbu.edu.hk/main/chinese-course/",
+            "is_external": false
+          },
+          {
+            "text": "English",
+            "href": "https://lc.hkbu.edu.hk/main/english-course/",
+            "is_external": false
+          },
+          {
+            "text": "Putonghua/Mandarin",
+            "href": "https://lc.hkbu.edu.hk/main/pth-course/",
+            "is_external": false
+          },
+          {
+            "text": "Foreign Languages",
+            "href": "https://lc.hkbu.edu.hk/main/foreign-course/",
+            "is_external": false
+          },
+          {
+            "text": "Minor Programmes",
+            "href": "https://lc.hkbu.edu.hk/main/minor-programmes/",
+            "is_external": false
+          }
+        ]
+      },
+      {
+        "tag": "ul",
+        "classes": [
+          "sub-menu"
+        ],
+        "id": "",
+        "links": [
+          {
+            "text": "Digital Credentials For Your Achievements",
+            "href": "https://lc.hkbu.edu.hk/main/credly/",
+            "is_external": false
+          },
+          {
+            "text": "Examinations",
+            "href": "https://lc.hkbu.edu.hk/main/examinations/",
+            "is_external": false
+          },
+          {
+            "text": "Enhancement Services",
+            "href": "https://lc.hkbu.edu.hk/main/enhancement-services/",
+            "is_external": false
+          },
+          {
+            "text": "Competitions & Activities",
+            "href": "https://lc.hkbu.edu.hk/main/activities/",
+            "is_external": false
+          },
+          {
+            "text": "Sponsorships & Awards",
+            "href": "https://lc.hkbu.edu.hk/main/sponsorshipsawards/",
+            "is_external": false
+          },
+          {
+            "text": "Intercultural Immersive Exchange programme 2025",
+            "href": "https://lc.hkbu.edu.hk/main/iie/",
+            "is_external": false
+          },
+          {
+            "text": "Independent Learning",
+            "href": "https://lc.hkbu.edu.hk/main/self-learning/",
+            "is_external": false
+          }
+        ]
+      },
+      {
+        "tag": "ul",
+        "classes": [
+          "sub-menu"
+        ],
+        "id": "",
+        "links": [
+          {
+            "text": "Intercultural Immersive Exchange programme 2025",
+            "href": "https://lc.hkbu.edu.hk/main/iie/",
+            "is_external": false
+          }
+        ]
+      },
+      {
+        "tag": "ul",
+        "classes": [
+          "sub-menu"
+        ],
+        "id": "",
+        "links": [
+          {
+            "text": "Chinese Section",
+            "href": "https://lc.hkbu.edu.hk/main/staff-chinese/",
+            "is_external": false
+          },
+          {
+            "text": "English Section",
+            "href": "https://lc.hkbu.edu.hk/main/staff-english/",
+            "is_external": false
+          },
+          {
+            "text": "Putonghua Section",
+            "href": "https://lc.hkbu.edu.hk/main/staff-putonghua/",
+            "is_external": false
+          },
+          {
+            "text": "Foreign Languages Section",
+            "href": "https://lc.hkbu.edu.hk/main/staff-foreign/",
+            "is_external": false
+          },
+          {
+            "text": "Research/Project Staff",
+            "href": "https://lc.hkbu.edu.hk/main/staff-research/",
+            "is_external": false
+          },
+          {
+            "text": "Administrative, Clerical & Technical Support Staff",
+            "href": "https://lc.hkbu.edu.hk/main/staff-support/",
+            "is_external": false
+          }
+        ]
+      },
+      {
+        "tag": "ul",
+        "classes": [
+          "sub-menu"
+        ],
+        "id": "",
+        "links": [
+          {
+            "text": "Mission",
+            "href": "https://lc.hkbu.edu.hk/main/mission/",
+            "is_external": false
+          },
+          {
+            "text": "Photo Gallery",
+            "href": "https://lc.hkbu.edu.hk/main/photos/",
+            "is_external": false
+          },
+          {
+            "text": "Job Vacancies",
+            "href": "https://lc.hkbu.edu.hk/main/job/",
+            "is_external": false
+          },
+          {
+            "text": "Contact Us",
+            "href": "https://lc.hkbu.edu.hk/main/#section_contact_us",
+            "is_external": false
+          }
+        ]
+      },
+      {
+        "tag": "ul",
+        "classes": [
+          "sub-menu"
+        ],
+        "id": "",
+        "links": [
+          {
+            "text": "Projects",
+            "href": "https://lc.hkbu.edu.hk/main/projects/",
+            "is_external": false
+          },
+          {
+            "text": "Global Citizenship",
+            "href": "https://global-citizenship.hkbu.edu.hk/",
+            "is_external": false
+          },
+          {
+            "text": "GCAP3056 Taking a stand",
+            "href": "https://lc.hkbu.edu.hk/main/gcap-3056/",
+            "is_external": false
+          },
+          {
+            "text": "The Poetry e-Corpus",
+            "href": "https://www.poetryreading.org/",
+            "is_external": true
+          },
+          {
+            "text": "The Blue Sparrow – English Poetry for all",
+            "href": "https://app.poetryreading.org/",
+            "is_external": true
+          },
+          {
+            "text": "Scholarship Bulletin",
+            "href": "https://lc.hkbu.edu.hk/main/lc-scholarship-bulletin/",
+            "is_external": false
+          },
+          {
+            "text": "Publications",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2018/",
+            "is_external": false
+          },
+          {
+            "text": "2023",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2023/",
+            "is_external": false
+          },
+          {
+            "text": "2022",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2022/",
+            "is_external": false
+          },
+          {
+            "text": "2021",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2021/",
+            "is_external": false
+          },
+          {
+            "text": "2020",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2020/",
+            "is_external": false
+          },
+          {
+            "text": "2019",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2019/",
+            "is_external": false
+          },
+          {
+            "text": "2018",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2018/",
+            "is_external": false
+          },
+          {
+            "text": "2017",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2017/",
+            "is_external": false
+          },
+          {
+            "text": "2016",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2016/",
+            "is_external": false
+          },
+          {
+            "text": "2015",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2015/",
+            "is_external": false
+          },
+          {
+            "text": "2014",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2014/",
+            "is_external": false
+          },
+          {
+            "text": "2013",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2013/",
+            "is_external": false
+          },
+          {
+            "text": "2012",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2012/",
+            "is_external": false
+          },
+          {
+            "text": "2011",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2011/",
+            "is_external": false
+          },
+          {
+            "text": "International Research Advisors Scheme",
+            "href": "https://lc.hkbu.edu.hk/main/ira/",
+            "is_external": false
+          },
+          {
+            "text": "Staff Corner",
+            "href": "https://lc.hkbu.edu.hk/main/download/",
+            "is_external": false
+          }
+        ]
+      },
+      {
+        "tag": "ul",
+        "classes": [
+          "sub-menu"
+        ],
+        "id": "",
+        "links": [
+          {
+            "text": "Global Citizenship",
+            "href": "https://global-citizenship.hkbu.edu.hk/",
+            "is_external": false
+          },
+          {
+            "text": "GCAP3056 Taking a stand",
+            "href": "https://lc.hkbu.edu.hk/main/gcap-3056/",
+            "is_external": false
+          },
+          {
+            "text": "The Poetry e-Corpus",
+            "href": "https://www.poetryreading.org/",
+            "is_external": true
+          },
+          {
+            "text": "The Blue Sparrow – English Poetry for all",
+            "href": "https://app.poetryreading.org/",
+            "is_external": true
+          }
+        ]
+      },
+      {
+        "tag": "ul",
+        "classes": [
+          "sub-menu"
+        ],
+        "id": "",
+        "links": [
+          {
+            "text": "2023",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2023/",
+            "is_external": false
+          },
+          {
+            "text": "2022",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2022/",
+            "is_external": false
+          },
+          {
+            "text": "2021",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2021/",
+            "is_external": false
+          },
+          {
+            "text": "2020",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2020/",
+            "is_external": false
+          },
+          {
+            "text": "2019",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2019/",
+            "is_external": false
+          },
+          {
+            "text": "2018",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2018/",
+            "is_external": false
+          },
+          {
+            "text": "2017",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2017/",
+            "is_external": false
+          },
+          {
+            "text": "2016",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2016/",
+            "is_external": false
+          },
+          {
+            "text": "2015",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2015/",
+            "is_external": false
+          },
+          {
+            "text": "2014",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2014/",
+            "is_external": false
+          },
+          {
+            "text": "2013",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2013/",
+            "is_external": false
+          },
+          {
+            "text": "2012",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2012/",
+            "is_external": false
+          },
+          {
+            "text": "2011",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2011/",
+            "is_external": false
+          }
+        ]
+      }
+    ],
+    "top_bar": [
+      {
+        "element": "<header class=\"dt-site-header\" role=\"banner\">\n<div class=\"dt-main-menu-wrap transition-bg\" id=\"dt-header-nav\">\n<div class=\"container\">\n<div class=\"container-wrapper\">\n<div class=\"row\">\n<div class=\"col...",
+        "links": [
+          {
+            "text": "",
+            "href": "https://lc.hkbu.edu.hk/main/",
+            "classes": [
+              "custom-logo-link"
+            ]
+          },
+          {
+            "text": "COURSES",
+            "href": "https://lc.hkbu.edu.hk/main/chinese-course/",
+            "classes": []
+          },
+          {
+            "text": "Chinese",
+            "href": "https://lc.hkbu.edu.hk/main/chinese-course/",
+            "classes": []
+          },
+          {
+            "text": "English",
+            "href": "https://lc.hkbu.edu.hk/main/english-course/",
+            "classes": []
+          },
+          {
+            "text": "Putonghua/Mandarin",
+            "href": "https://lc.hkbu.edu.hk/main/pth-course/",
+            "classes": []
+          },
+          {
+            "text": "Foreign Languages",
+            "href": "https://lc.hkbu.edu.hk/main/foreign-course/",
+            "classes": []
+          },
+          {
+            "text": "Minor Programmes",
+            "href": "https://lc.hkbu.edu.hk/main/minor-programmes/",
+            "classes": []
+          },
+          {
+            "text": "STUDENTS",
+            "href": "https://lc.hkbu.edu.hk/main/examinations/",
+            "classes": []
+          },
+          {
+            "text": "Digital Credentials For Your Achievements",
+            "href": "https://lc.hkbu.edu.hk/main/credly/",
+            "classes": []
+          },
+          {
+            "text": "Examinations",
+            "href": "https://lc.hkbu.edu.hk/main/examinations/",
+            "classes": []
+          },
+          {
+            "text": "Enhancement Services",
+            "href": "https://lc.hkbu.edu.hk/main/enhancement-services/",
+            "classes": []
+          },
+          {
+            "text": "Competitions & Activities",
+            "href": "https://lc.hkbu.edu.hk/main/activities/",
+            "classes": []
+          },
+          {
+            "text": "Sponsorships & Awards",
+            "href": "https://lc.hkbu.edu.hk/main/sponsorshipsawards/",
+            "classes": []
+          },
+          {
+            "text": "Intercultural Immersive Exchange programme 2025",
+            "href": "https://lc.hkbu.edu.hk/main/iie/",
+            "classes": []
+          },
+          {
+            "text": "Independent Learning",
+            "href": "https://lc.hkbu.edu.hk/main/self-learning/",
+            "classes": []
+          },
+          {
+            "text": "PEOPLE",
+            "href": "https://lc.hkbu.edu.hk/main/staff-chinese/",
+            "classes": []
+          },
+          {
+            "text": "Chinese Section",
+            "href": "https://lc.hkbu.edu.hk/main/staff-chinese/",
+            "classes": []
+          },
+          {
+            "text": "English Section",
+            "href": "https://lc.hkbu.edu.hk/main/staff-english/",
+            "classes": []
+          },
+          {
+            "text": "Putonghua Section",
+            "href": "https://lc.hkbu.edu.hk/main/staff-putonghua/",
+            "classes": []
+          },
+          {
+            "text": "Foreign Languages Section",
+            "href": "https://lc.hkbu.edu.hk/main/staff-foreign/",
+            "classes": []
+          },
+          {
+            "text": "Research/Project Staff",
+            "href": "https://lc.hkbu.edu.hk/main/staff-research/",
+            "classes": []
+          },
+          {
+            "text": "Administrative, Clerical & Technical Support Staff",
+            "href": "https://lc.hkbu.edu.hk/main/staff-support/",
+            "classes": []
+          },
+          {
+            "text": "ABOUT US",
+            "href": "https://lc.hkbu.edu.hk/main/mission/",
+            "classes": []
+          },
+          {
+            "text": "Mission",
+            "href": "https://lc.hkbu.edu.hk/main/mission/",
+            "classes": []
+          },
+          {
+            "text": "Photo Gallery",
+            "href": "https://lc.hkbu.edu.hk/main/photos/",
+            "classes": []
+          },
+          {
+            "text": "Job Vacancies",
+            "href": "https://lc.hkbu.edu.hk/main/job/",
+            "classes": []
+          },
+          {
+            "text": "Contact Us",
+            "href": "https://lc.hkbu.edu.hk/main/#section_contact_us",
+            "classes": []
+          },
+          {
+            "text": "2024 Conference",
+            "href": "https://lc.hkbu.edu.hk/main/lconference/",
+            "classes": []
+          },
+          {
+            "text": "Professional Development",
+            "href": "https://lc.hkbu.edu.hk/main/ira/",
+            "classes": []
+          },
+          {
+            "text": "Projects",
+            "href": "https://lc.hkbu.edu.hk/main/projects/",
+            "classes": []
+          },
+          {
+            "text": "Global Citizenship",
+            "href": "https://global-citizenship.hkbu.edu.hk/",
+            "classes": []
+          },
+          {
+            "text": "GCAP3056 Taking a stand",
+            "href": "https://lc.hkbu.edu.hk/main/gcap-3056/",
+            "classes": []
+          },
+          {
+            "text": "The Poetry e-Corpus",
+            "href": "https://www.poetryreading.org/",
+            "classes": []
+          },
+          {
+            "text": "The Blue Sparrow – English Poetry for all",
+            "href": "https://app.poetryreading.org/",
+            "classes": []
+          },
+          {
+            "text": "Scholarship Bulletin",
+            "href": "https://lc.hkbu.edu.hk/main/lc-scholarship-bulletin/",
+            "classes": []
+          },
+          {
+            "text": "Publications",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2018/",
+            "classes": []
+          },
+          {
+            "text": "2023",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2023/",
+            "classes": []
+          },
+          {
+            "text": "2022",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2022/",
+            "classes": []
+          },
+          {
+            "text": "2021",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2021/",
+            "classes": []
+          },
+          {
+            "text": "2020",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2020/",
+            "classes": []
+          },
+          {
+            "text": "2019",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2019/",
+            "classes": []
+          },
+          {
+            "text": "2018",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2018/",
+            "classes": []
+          },
+          {
+            "text": "2017",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2017/",
+            "classes": []
+          },
+          {
+            "text": "2016",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2016/",
+            "classes": []
+          },
+          {
+            "text": "2015",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2015/",
+            "classes": []
+          },
+          {
+            "text": "2014",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2014/",
+            "classes": []
+          },
+          {
+            "text": "2013",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2013/",
+            "classes": []
+          },
+          {
+            "text": "2012",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2012/",
+            "classes": []
+          },
+          {
+            "text": "2011",
+            "href": "https://lc.hkbu.edu.hk/main/staff-publications-2011/",
+            "classes": []
+          },
+          {
+            "text": "International Research Advisors Scheme",
+            "href": "https://lc.hkbu.edu.hk/main/ira/",
+            "classes": []
+          },
+          {
+            "text": "Staff Corner",
+            "href": "https://lc.hkbu.edu.hk/main/download/",
+            "classes": []
+          }
+        ]
+      },
+      {
+        "element": "<div class=\"elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-ea65362\" data-element_type=\"column\" data-id=\"ea65362\">\n<div class=\"elementor-column-wrap elemento...",
+        "links": [
+          {
+            "text": "Details & Registration",
+            "href": "http://lc.hkbu.edu.hk/main/wp-content/uploads/Regina-Brautlacht_0915-1.pdf",
+            "classes": []
+          },
+          {
+            "text": "閱讀電子版本",
+            "href": "https://lc.hkbu.edu.hk/main/wp-content/uploads/stream28.pdf",
+            "classes": []
+          },
+          {
+            "text": "Details & Registration",
+            "href": "https://event.hkbu.edu.hk/files/1748565263_f.jpg",
+            "classes": []
+          },
+          {
+            "text": "網上報名請按此",
+            "href": "http://lc.hkbu.edu.hk/psc/register-psc.php",
+            "classes": []
+          },
+          {
+            "text": "Registration & Details",
+            "href": "https://lc.hkbu.edu.hk/main/reading-club/",
+            "classes": []
+          },
+          {
+            "text": "Registration & Details",
+            "href": "https://hkbu.questionpro.com/a/TakeSurvey?tt=XojEPw7mJigECHrPeIW9eQ%3D%3D",
+            "classes": []
+          },
+          {
+            "text": "報名及詳情",
+            "href": "https://lc.hkbu.edu.hk/main/conference/",
+            "classes": []
+          },
+          {
+            "text": "按此閱讀",
+            "href": "https://lc.hkbu.edu.hk/main/wp-content/uploads/BUpomofo_202504.pdf",
+            "classes": []
+          },
+          {
+            "text": "報名及詳情",
+            "href": "https://lc.hkbu.edu.hk/main/drama",
+            "classes": []
+          },
+          {
+            "text": "Details & Registration",
+            "href": "https://lc.hkbu.edu.hk/main/english-speaking-contest/",
+            "classes": []
+          },
+          {
+            "text": "報名及詳情",
+            "href": "https://lc.hkbu.edu.hk/main/pth-singing/",
+            "classes": []
+          },
+          {
+            "text": "報名及詳情",
+            "href": "https://lc.hkbu.edu.hk/main/youngwriter/",
+            "classes": []
+          },
+          {
+            "text": "Details & Registration",
+            "href": "https://hkbu.questionpro.com/french0318",
+            "classes": []
+          },
+          {
+            "text": "測試詳情請按此",
+            "href": "https://lc.hkbu.edu.hk/sall/pth/c-det.php",
+            "classes": []
+          },
+          {
+            "text": "報名及詳情",
+            "href": "https://lc.hkbu.edu.hk/main/pth-singing/",
+            "classes": []
+          },
+          {
+            "text": "Details & Registration",
+            "href": "https://lc.hkbu.edu.hk/main/3mt/",
+            "classes": []
+          },
+          {
+            "text": "報名及詳情",
+            "href": "https://lc.hkbu.edu.hk/main/wp-content/uploads/PTH-Seminar_%E5%AF%87%E5%BF%97%E6%9A%89%E5%8D%9A%E5%A3%AB_v2-scaled.jpg",
+            "classes": []
+          },
+          {
+            "text": "網上報名請按此",
+            "href": "https://hkbu.questionpro.com/LTW0303",
+            "classes": []
+          },
+          {
+            "text": "Details & Registration",
+            "href": "https://lc.hkbu.edu.hk/main/wp-content/uploads/Adam-Poster_v3-scaled.jpg",
+            "classes": []
+          },
+          {
+            "text": "Details & Registration",
+            "href": "https://lc.hkbu.edu.hk/main/wp-content/uploads/0-Generic-Cultural-Carnival.png",
+            "classes": []
+          },
+          {
+            "text": "網上報名請按此",
+            "href": "http://lc.hkbu.edu.hk/psc/register-psc.php",
+            "classes": []
+          },
+          {
+            "text": "報名及詳情",
+            "href": "https://lc.hkbu.edu.hk/main/drama/",
+            "classes": []
+          },
+          {
+            "text": "閱讀電子版本",
+            "href": "https://lc.hkbu.edu.hk/main/wp-content/uploads/stream27.pdf",
+            "classes": []
+          },
+          {
+            "text": "Details & Registration",
+            "href": "https://lc.hkbu.edu.hk/main/english-speaking-contest/",
+            "classes": []
+          },
+          {
+            "text": "Details & Registration",
+            "href": "https://lc.hkbu.edu.hk/main/wp-content/uploads/Dr.-Angela-Poster.jpg",
+            "classes": []
+          },
+          {
+            "text": "Details & Registration",
+            "href": "https://lc.hkbu.edu.hk/main/wp-content/uploads/Lynne-Seminar-241128_v1-scaled.jpg",
+            "classes": []
+          },
+          {
+            "text": "Details & Registration",
+            "href": "https://lc.hkbu.edu.hk/main/wp-content/uploads/Lynne-Poster-241127_v1-scaled.jpg",
+            "classes": []
+          },
+          {
+            "text": "網上報名請按此",
+            "href": "https://lc.hkbu.edu.hk/main/lcchi/",
+            "classes": []
+          },
+          {
+            "text": "網上報名請按此",
+            "href": "https://lc.hkbu.edu.hk/main/speech-c/",
+            "classes": []
+          },
+          {
+            "text": "Details & Registration",
+            "href": "https://lc.hkbu.edu.hk/main/wp-content/uploads/Emma_202410-Poster_v3-scaled.jpg",
+            "classes": []
+          }
+        ]
+      },
+      {
+        "element": "<div class=\"elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-48b6b73 elementor-invisible\" data-element_type=\"column\" data-id=\"48b6b73\" data-settings='{\"backgr...",
+        "links": [
+          {
+            "text": "",
+            "href": "https://lc.hkbu.edu.hk/main/wp-content/uploads/2526a_ENG_Non-credit-1.png",
+            "classes": []
+          },
+          {
+            "text": "",
+            "href": "https://lc.hkbu.edu.hk/main/wp-content/uploads/2526a_ENG_Non-credit-2.png",
+            "classes": []
+          },
+          {
+            "text": "",
+            "href": "https://lc.hkbu.edu.hk/main/wp-content/uploads/2526a_ENG-Workshops_0828.png",
+            "classes": []
+          },
+          {
+            "text": "",
+            "href": "https://lc.hkbu.edu.hk/main/wp-content/uploads/2526a_LLO-Consultation.png",
+            "classes": []
+          },
+          {
+            "text": "",
+            "href": "https://lc.hkbu.edu.hk/main/wp-content/uploads/2526a_SUPC1310.png",
+            "classes": []
+          },
+          {
+            "text": "",
+            "href": "https://lc.hkbu.edu.hk/main/wp-content/uploads/2526a_SUPC1321.png",
+            "classes": []
+          },
+          {
+            "text": "",
+            "href": "https://lc.hkbu.edu.hk/main/wp-content/uploads/2526a_SUPC1020.png",
+            "classes": []
+          },
+          {
+            "text": "",
+            "href": "https://lc.hkbu.edu.hk/main/wp-content/uploads/Regina-Brautlacht_0915-1.jpg",
+            "classes": []
+          },
+          {
+            "text": "",
+            "href": "https://lc.hkbu.edu.hk/main/wp-content/uploads/PTH_SES_20230918-scaled-1.jpg",
+            "classes": []
+          },
+          {
+            "text": "",
+            "href": "https://lc.hkbu.edu.hk/main/wp-content/uploads/Minor-in.png",
+            "classes": []
+          },
+          {
+            "text": "",
+            "href": "https://lc.hkbu.edu.hk/main/wp-content/uploads/GE_20240709-scaled.jpg",
+            "classes": []
+          },
+          {
+            "text": "",
+            "href": "https://lc.hkbu.edu.hk/main/wp-content/uploads/Becoming-a-Global-Citizen.png",
+            "classes": []
+          },
+          {
+            "text": "",
+            "href": "https://lc.hkbu.edu.hk/main/wp-content/uploads/learning-english-on-your-own-scaled.jpg",
+            "classes": []
+          },
+          {
+            "text": "",
+            "href": "https://lc.hkbu.edu.hk/main/wp-content/uploads/BUpomofo_202504.pdf",
+            "classes": []
+          },
+          {
+            "text": "",
+            "href": "https://lc.hkbu.edu.hk/main/flipbook_09/",
+            "classes": []
+          },
+          {
+            "text": "",
+            "href": "https://lc.hkbu.edu.hk/main/wp-content/uploads/stream28.pdf",
+            "classes": []
+          },
+          {
+            "text": "Register Here",
+            "href": "https://lclep.hkbu.edu.hk/sup/",
+            "classes": [
+              "elementor-button-link",
+              "elementor-button",
+              "elementor-size-sm"
+            ]
+          }
+        ]
+      },
+      {
+        "element": "<div class=\"elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-6e4a47f elementor-invisible\" data-element_type=\"column\" data-id=\"6e4a47f\" data-settings='{\"backgr...",
+        "links": [
+          {
+            "text": "普通話能力畢業要求 (Putonghua Proficiency Requirement for Graduation)",
+            "href": "http://lc.hkbu.edu.hk/sall/pth/c-requirement.php",
+            "classes": []
+          },
+          {
+            "text": "Sponsorship for Taking the Putonghua Shuiping Ceshi (PSC Test)",
+            "href": "https://lc.hkbu.edu.hk/main/psc-sponsorship/",
+            "classes": []
+          },
+          {
+            "text": "普通話培訓測試中心",
+            "href": "http://pttcentre.hkbu.edu.hk",
+            "classes": []
+          },
+          {
+            "text": "香港浸會大學普通話能力檢定及豁免測試 (DET)",
+            "href": "http://lc.hkbu.edu.hk/sall/pth/c-det.php",
+            "classes": []
+          }
+        ]
+      },
+      {
+        "element": "<div class=\"elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-cd9e9f0 elementor-invisible\" data-element_type=\"column\" data-id=\"cd9e9f0\" data-settings='{\"backgr...",
+        "links": [
+          {
+            "text": "IELTS Information",
+            "href": "https://lc.hkbu.edu.hk/main/ielts/",
+            "classes": []
+          },
+          {
+            "text": "HKBU Sponsorship Scheme for the IELTS Test",
+            "href": "https://lc.hkbu.edu.hk/main/ielts/sponsorship/",
+            "classes": []
+          },
+          {
+            "text": "Awards for Outstanding Performance in the IELTS Test",
+            "href": "https://lc.hkbu.edu.hk/main/ielts/awards/",
+            "classes": []
+          },
+          {
+            "text": "Lucky Draw for Students Taking IELTS Prep Courses and the IELTS Test",
+            "href": "https://lc.hkbu.edu.hk/main/lucky-draw/",
+            "classes": []
+          }
+        ]
+      },
+      {
+        "element": "<div class=\"elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-3e04898 elementor-invisible\" data-element_type=\"column\" data-id=\"3e04898\" data-settings='{\"backgr...",
+        "links": [
+          {
+            "text": "「寫作指導」計劃",
+            "href": "https://lc.hkbu.edu.hk/main/%e4%b8%ad%e6%96%87%e5%af%ab%e4%bd%9c%e5%8f%8a%e8%aa%aa%e8%ac%9b%e8%bc%94%e5%b0%8e/",
+            "classes": []
+          },
+          {
+            "text": "「改善粵語說講」輔導",
+            "href": "https://lc.hkbu.edu.hk/main/%e4%b8%ad%e6%96%87%e5%af%ab%e4%bd%9c%e5%8f%8a%e8%aa%aa%e8%ac%9b%e8%bc%94%e5%b0%8e/",
+            "classes": []
+          },
+          {
+            "text": "Student-Tutor Writing Consultation Programme (SWCP)",
+            "href": "https://lc.hkbu.edu.hk/main/peertutoring/",
+            "classes": []
+          },
+          {
+            "text": "Speaking & Writing Enhancement Services (SWES)",
+            "href": "https://lcmis.hkbu.edu.hk/services/SWES",
+            "classes": []
+          },
+          {
+            "text": "「改善普通話說講」輔導",
+            "href": "https://lc.hkbu.edu.hk/main/putonghua-speaking-enhancement/",
+            "classes": []
+          }
+        ]
+      },
+      {
+        "element": "<div class=\"elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-31ea3b2 elementor-invisible\" data-element_type=\"column\" data-id=\"31ea3b2\" data-settings='{\"backgr...",
+        "links": [
+          {
+            "text": "Self-Access Language Learning",
+            "href": "https://lc.hkbu.edu.hk/main/self-learning/",
+            "classes": []
+          },
+          {
+            "text": "Language Learning Oasis",
+            "href": "https://lc.hkbu.edu.hk/main/facilities/",
+            "classes": []
+          },
+          {
+            "text": "Self-Study Materials (ICOSA)",
+            "href": "http://icosa.hkbu.edu.hk/",
+            "classes": []
+          }
+        ]
+      },
+      {
+        "element": "<div class=\"elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a133a17\" data-element_type=\"column\" data-id=\"a133a17\">\n<div class=\"elementor-column-wrap elemento...",
+        "links": [
+          {
+            "text": "lc@hkbu.edu.hk",
+            "href": "mailto:lc@hkbu.edu.hk",
+            "classes": []
+          },
+          {
+            "text": "Facebook",
+            "href": "http://www.facebook.com/hkbulc",
+            "classes": [
+              "elementor-icon",
+              "elementor-social-icon",
+              "elementor-social-icon-facebook",
+              "elementor-repeater-item-499a5c6"
+            ]
+          },
+          {
+            "text": "Instagram",
+            "href": "https://www.instagram.com/hkbulc/",
+            "classes": [
+              "elementor-icon",
+              "elementor-social-icon",
+              "elementor-social-icon-instagram",
+              "elementor-repeater-item-35493af"
+            ]
+          },
+          {
+            "text": "Youtube",
+            "href": "https://www.youtube.com/channel/UCfTpxh7e1acbcH02o1jsy-w",
+            "classes": [
+              "elementor-icon",
+              "elementor-social-icon",
+              "elementor-social-icon-youtube",
+              "elementor-repeater-item-c1316d7"
+            ]
+          }
+        ]
+      },
+      {
+        "element": "<div class=\"dt-footer-bar\">\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-lg-6 col-md-6\">\n<div class=\"dt-copyright\">\n<a href=\"/main/#contact\">Contact Us</a> | <a href=\"/main/job\">Job Vacan...",
+        "links": [
+          {
+            "text": "Contact Us",
+            "href": "/main/#contact",
+            "classes": []
+          },
+          {
+            "text": "Job Vacancies",
+            "href": "/main/job",
+            "classes": []
+          },
+          {
+            "text": "For LC Staff",
+            "href": "/main/download",
+            "classes": []
+          },
+          {
+            "text": "the Association of Hong Kong Language Centres",
+            "href": "http://ahklc.hk/",
+            "classes": []
+          },
+          {
+            "text": "Language Centre",
+            "href": "https://lc.hkbu.edu.hk/main",
+            "classes": []
+          },
+          {
+            "text": "Privacy Policy",
+            "href": "https://bupdpo.hkbu.edu.hk/policies-and-procedures/pps-pics",
+            "classes": []
+          }
+        ]
+      }
+    ],
+    "footer_nav": [],
+    "breadcrumbs": []
+  },
+  "content_sections": [
+    {
+      "tag": "div",
+      "classes": [
+        "container"
+      ],
+      "id": "",
+      "text_content": "COURSESChineseEnglishPutonghua/MandarinForeign LanguagesMinor ProgrammesSTUDENTSDigital Credentials For Your AchievementsExaminationsEnhancement ServicesCompetitions & ActivitiesSponsorships & AwardsI...",
+      "child_count": 120,
+      "has_images": true,
+      "has_links": true
+    },
+    {
+      "tag": "div",
+      "classes": [
+        "container-wrapper"
+      ],
+      "id": "",
+      "text_content": "COURSESChineseEnglishPutonghua/MandarinForeign LanguagesMinor ProgrammesSTUDENTSDigital Credentials For Your AchievementsExaminationsEnhancement ServicesCompetitions & ActivitiesSponsorships & AwardsI...",
+      "child_count": 119,
+      "has_images": true,
+      "has_links": true
+    },
+    {
+      "tag": "div",
+      "classes": [
+        "row"
+      ],
+      "id": "",
+      "text_content": "COURSESChineseEnglishPutonghua/MandarinForeign LanguagesMinor ProgrammesSTUDENTSDigital Credentials For Your AchievementsExaminationsEnhancement ServicesCompetitions & ActivitiesSponsorships & AwardsI...",
+      "child_count": 118,
+      "has_images": true,
+      "has_links": true
+    },
+    {
+      "tag": "div",
+      "classes": [
+        "col-lg-3",
+        "col-md-12",
+        "col-sm-12"
+      ],
+      "id": "dt-site-logo",
+      "text_content": "",
+      "child_count": 5,
+      "has_images": true,
+      "has_links": true
+    },
+    {
+      "tag": "div",
+      "classes": [
+        "dt-logo"
+      ],
+      "id": "",
+      "text_content": "",
+      "child_count": 4,
+      "has_images": true,
+      "has_links": true
+    },
+    {
+      "tag": "div",
+      "classes": [
+        "dt-menu-md"
+      ],
+      "id": "",
+      "text_content": "",
+      "child_count": 1,
+      "has_images": false,
+      "has_links": false
+    },
+    {
+      "tag": "div",
+      "classes": [
+        "dt-main-menu-wrapper",
+        "col-lg-9",
+        "col-md-12",
+        "col-sm-12"
+      ],
+      "id": "",
+      "text_content": "COURSESChineseEnglishPutonghua/MandarinForeign LanguagesMinor ProgrammesSTUDENTSDigital Credentials For Your AchievementsExaminationsEnhancement ServicesCompetitions & ActivitiesSponsorships & AwardsI...",
+      "child_count": 111,
+      "has_images": false,
+      "has_links": true
+    },
+    {
+      "tag": "div",
+      "classes": [
+        "primary-menu-container"
+      ],
+      "id": "primary-menu-container",
+      "text_content": "COURSESChineseEnglishPutonghua/MandarinForeign LanguagesMinor ProgrammesSTUDENTSDigital Credentials For Your AchievementsExaminationsEnhancement ServicesCompetitions & ActivitiesSponsorships & AwardsI...",
+      "child_count": 109,
+      "has_images": false,
+      "has_links": true
+    }
+  ],
+  "wordpress_info": {
+    "is_wordpress": true,
+    "theme": "glow",
+    "plugins": [],
+    "wp_version": "Unknown"
+  },
+  "issues": [
+    {
+      "type": "Outdated Content",
+      "severity": "Medium",
+      "issue": "Found 2 links to 2024 conference",
+      "details": [
+        "https://lc.hkbu.edu.hk/main/lconference/",
+        "https://lc.hkbu.edu.hk/main/conference/"
+      ],
+      "recommendation": "Remove outdated conference links"
+    },
+    {
+      "type": "Structure",
+      "severity": "Low",
+      "issue": "Excessive div count: 245",
+      "recommendation": "Consider simplifying HTML structure"
+    },
+    {
+      "type": "Accessibility",
+      "severity": "Medium",
+      "issue": "3 images missing alt text",
+      "recommendation": "Add descriptive alt text to all images"
+    },
+    {
+      "type": "Maintainability",
+      "severity": "Low",
+      "issue": "128 elements with inline styles",
+      "recommendation": "Move inline styles to CSS files"
+    }
+  ]
+}
